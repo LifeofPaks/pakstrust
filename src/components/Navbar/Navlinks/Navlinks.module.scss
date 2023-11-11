@@ -1,0 +1,31 @@
+@import '../../../styles/Responsive.scss';
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    li{
+        .link{
+            transition: .3s;
+            letter-spacing: 2px;
+
+            &:hover{
+                color: blue;
+            }
+
+            &.active{
+                position: relative;
+                color: blue;
+                transition: .3s;
+
+            }
+        }
+
+        button{
+            .icon{
+                font-size: 12px;
+                margin-left: .5rem;
+            }
+        }
+    }
+} 
