@@ -2,12 +2,17 @@
 .navlinks{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.8rem;
 
     li{
+
+        &.showcta{
+            position: relative;
+            margin-left: 2rem;
+        }
+
         .link{
             transition: .3s;
-            letter-spacing: 2px;
 
             &:hover{
                 color: blue;

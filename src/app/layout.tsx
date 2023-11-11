@@ -3,7 +3,6 @@ import { Rubik } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import { AppContext } from "@/hooks/Appcontext";
 
 const rubik = Rubik({
   subsets: ["latin"],
