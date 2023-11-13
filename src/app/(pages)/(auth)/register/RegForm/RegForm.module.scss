@@ -9,16 +9,7 @@
       display: none;
     }
     
-  input {
-    background: #f0f0f0;
-    height: 45px;
-    padding-inline: 1rem;
-  }
-
-  label{
-    font-size: 14px;
-    margin-bottom: .5rem;
-  }
+ 
 
   .heading {
     color: #333;
@@ -50,6 +41,17 @@
       .gridInputBox{
         display: flex;
         flex-direction: column;
+
+        input {
+          background: #f0f0f0;
+          height: 45px;
+          padding-inline: 1rem;
+        }
+      
+        label{
+          font-size: 14px;
+          margin-bottom: .5rem;
+        }
       }
     }
 
@@ -57,7 +59,44 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+        input {
+          background: #f0f0f0;
+          height: 45px;
+          padding-inline: 1rem;
+        }
+      
+        label{
+          font-size: 14px;
+          margin-bottom: .5rem;
+        }
     }
+
+    .checkbox{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      
+      label{
+          cursor: pointer;
+          font-size: 12px;
+
+          a{
+            color: blue;
+            transition: .3s;
+
+            &:hover{
+              opacity: .6;
+            }
+          }
+      }
+      
+      input{
+          cursor: pointer;
+          height: 16px;
+          width: 16px;
+      }
+  }
 
     .btnWraps{
         width: 100%;
@@ -89,7 +128,7 @@
             a{
                 display: flex;
                 align-items: center;
-                gap: 1rem;
+                gap: .3rem;
                 justify-content: center;
             }
            

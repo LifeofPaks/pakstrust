@@ -71,12 +71,18 @@ const RegForm = () => {
             <label htmlFor="cpw">Confrim Password</label>
             <input type="password" id="cpw" placeholder="" />
         </div>
+
+        <div className={styles.checkbox}>
+          <input type="checkbox" id="checkbox"  />
+          <label htmlFor="checkbox">I agree to <Link href='/'>terms & conditions</Link></label>
+        </div>
+
         <div className={styles.btnWraps}>
-          <button className={styles.mBtn}> Sign In</button>
+          <button className={styles.mBtn}> Submit</button>
             <button className={styles.oBtn}>
           <Link href="/login">
-              Not enrolled? Create an Account
-              <Image src="/logout.png" width={14} height={14} alt="icon" />{" "}
+              <Image src="/login.png" width={14} height={14} alt="icon" />{" "}
+             Sign In
           </Link>
             </button>
         </div>

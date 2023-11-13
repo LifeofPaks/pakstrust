@@ -1,0 +1,98 @@
+@import "../../styles/Responsive.scss";
+
+.hero {
+  padding: 3rem 6%;
+  padding-top: 13%;
+  min-height: 100vh;
+  
+
+  p {
+    color: #555;
+  }
+
+  .container {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../../../public/d1.webp') no-repeat 350px 0px,
+    url('../../../public/d2.webp') no-repeat 350px 450px,
+    url('../../../public/d4.png') no-repeat 1100px 0px;
+    background-size: 65px, 45px, 150px ;
+
+    .left {
+      width: 50%;
+
+      .text {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px;
+        color: blue;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+      }
+
+      .title {
+        font-size: 3.4rem;
+        margin-bottom: 2rem;
+      }
+
+      .desc {
+        line-height: 25px;
+        margin-bottom: 2rem;
+      }
+
+      .interact {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+
+        .icon{
+            margin-left: 0.7rem;
+        }
+
+        .playVideo {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+
+      .digSupport {
+        display: flex;
+        align-items: center;
+
+        .imgContainer {
+          width: 32%;
+          img {
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+
+            &.img2 {
+              margin-left: -0.6rem;
+            }
+
+            &.img3 {
+              margin-left: -0.6rem;
+            }
+          }
+        }
+
+        .support {
+          width: 200px;
+
+          .sText {
+            line-height: 25px;
+
+            a {
+              color: blue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

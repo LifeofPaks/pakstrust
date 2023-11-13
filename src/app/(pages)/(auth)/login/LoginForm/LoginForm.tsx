@@ -29,7 +29,7 @@ const LoginForm = () => {
         </div>
 
         <div className={styles.checkbox}>
-          <input type="checkbox" id="checkbox" placeholder="name@email.com" />
+          <input type="checkbox" id="checkbox"/>
           <label htmlFor="checkbox">Stay signed in for 30 days</label>
         </div>
 

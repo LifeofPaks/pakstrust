@@ -77,7 +77,7 @@ const Navlinks = () => {
         </li>
 
         <li>
-          <Link href="/">
+          <Link href="/login">
             <button className="primaryBtn">
               online banking
               <FontAwesomeIcon className={styles.icon} icon={faChevronRight} />

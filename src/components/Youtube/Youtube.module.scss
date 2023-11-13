@@ -1,0 +1,36 @@
+@import '../../styles/Responsive.scss';
+
+.youtube{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000074;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+
+
+    .closeBtn{
+        color: #fff;
+        background: #292929;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        display: grid;
+        place-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        transition: .3s;
+        opacity: .8;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
