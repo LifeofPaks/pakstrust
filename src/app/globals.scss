@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@600&family=Voces&family=Volkhov:wght@400;700&display=swap');
-@import "animate.css";
+@import '~loaders.css/src/animations/pacman.scss';
+
+$primaryColor : blue;
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -135,3 +138,16 @@ button{
 }
 
 
+.loader-active{
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}

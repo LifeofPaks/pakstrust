@@ -4,7 +4,7 @@
   padding: 3rem 6%;
   padding-top: 13%;
   min-height: 100vh;
-  
+  animation: fadeIn 1s 2s;
 
   p {
     color: #555;
@@ -15,10 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url('../../../public/d1.webp') no-repeat 350px 0px,
-    url('../../../public/d2.webp') no-repeat 350px 450px,
-    url('../../../public/d4.png') no-repeat 1100px 0px;
-    background-size: 65px, 45px, 150px ;
+    background: url("../../../public/d1.webp") no-repeat 350px 0px,
+      url("../../../public/d2.webp") no-repeat 350px 450px,
+      url("../../../public/d4.png") no-repeat 1100px 0px;
+    background-size: 65px, 45px, 150px;
 
     .left {
       width: 50%;
@@ -48,8 +48,8 @@
         gap: 1rem;
         margin-bottom: 3rem;
 
-        .icon{
-            margin-left: 0.7rem;
+        .icon {
+          margin-left: 0.7rem;
         }
 
         .playVideo {
@@ -90,6 +90,41 @@
               color: blue;
               text-decoration: underline;
             }
+          }
+        }
+      }
+    }
+
+    .right {
+      .customImgContainer {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .imgWrap {
+          position: relative;
+          overflow: hidden;
+
+          &.high {
+            transform: translateY(-40px);
+          }
+
+          &.low {
+            transform: translateY(25px);
+          }
+
+          .cut {
+            width: 120px;
+            height: 50px;
+            background: #fafafa;
+            position: absolute;
+            transform: rotate(-35deg);
+            left: -2rem;
+            top: -0.8rem;
+          }
+
+          img {
+            object-fit: cover;
           }
         }
       }

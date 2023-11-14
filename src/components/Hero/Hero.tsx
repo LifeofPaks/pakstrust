@@ -1,10 +1,17 @@
+"use client";
 import React from "react";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { store } from "@/hooks/store";
+import Youtube from "../Youtube/Youtube";
+import Loader from "react-loaders";
+
 const Hero = () => {
+  const { togglePlayVideo } = store();
+
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
@@ -32,7 +39,7 @@ const Hero = () => {
                 />
               </button>
             </Link>
-            <div className={styles.playVideo}>
+            <div onClick={togglePlayVideo} className={styles.playVideo}>
               <Image src="/play.png" width={60} height={60} alt="alt" />
               <p className={styles.watch}>Watch Video</p>
             </div>
@@ -70,8 +77,33 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className={styles.right}></div>
+        <div className={styles.right}>
+          <div className={styles.customImgContainer}>
+            <div className={`${styles.imgWrap} ${styles.high}`}>
+              <div className={styles.cut}></div>
+              <Image
+                src="/m1.webp"
+                alt="hero-img"
+                width={280}
+                height={480}
+              />
+            </div>
+
+            <div className={`${styles.imgWrap} ${styles.low}`}>
+              <div className={styles.cut}></div>
+              <Image
+                src="/w1.jpeg"
+                alt="hero-img"
+                width={280}
+                height={480}
+              />
+            </div>
+          </div>
+        </div>
       </div>
+      <Youtube />
+
+      <Loader active type="pacman" />
     </div>
   );
 };

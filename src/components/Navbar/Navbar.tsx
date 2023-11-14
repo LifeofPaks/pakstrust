@@ -4,7 +4,6 @@ import Logos from "@/brands/Logos/Logos";
 import Translator from "@/helpers/Translator";
 import React from "react";
 import Navlinks from "./Navlinks/Navlinks";
-import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
 

@@ -11,8 +11,7 @@ import PopupCta from "../PopupCta/PopupCta";
 
 const Navlinks = () => {
   const pathname = usePathname();
-  const { showCTA, toggleShowCTA } = store();
-  console.log(showCTA);
+  const {toggleShowCTA } = store();
 
   return (
     <>
@@ -73,7 +72,7 @@ const Navlinks = () => {
             <Image src="/add-user.png" width={16} height={16} alt="add-user" />
           </button>
 
-            <PopupCta/>
+          <PopupCta />
         </li>
 
         <li>
