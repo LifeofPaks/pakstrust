@@ -1,0 +1,51 @@
+@import "../../styles/Responsive.scss";
+
+.about {
+  padding: 5rem 6%;
+  background: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      .imgWrap {
+        position: relative;
+        overflow: hidden;
+        height: 650px;
+        width: 500px;
+
+        &.smallImg {
+          margin-right: -30%;
+          border: 5px solid #fff;
+          z-index: 1;
+          height: 350px;
+          width: 350px;
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .cut {
+          width: 120px;
+          height: 50px;
+          background: #fff;
+          position: absolute;
+          transform: rotate(-35deg);
+          left: -2rem;
+          top: -0.8rem;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+    }
+  }
+}

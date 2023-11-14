@@ -4,21 +4,21 @@
   padding: 3rem 6%;
   padding-top: 13%;
   min-height: 100vh;
-  animation: fadeIn 1s 2s;
 
   p {
-    color: #555;
+    color: #777777;
   }
 
   .container {
-    padding-block: 2rem;
+    padding-block: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url("../../../public/d1.webp") no-repeat 350px 0px,
+    background: url("../../../public/d1.webp") no-repeat 350px 20px,
       url("../../../public/d2.webp") no-repeat 350px 450px,
-      url("../../../public/d4.png") no-repeat 1100px 0px;
+      url("../../../public/d4.png") no-repeat 1100px 20px;
     background-size: 65px, 45px, 150px;
+    position: relative;
 
     .left {
       width: 50%;
@@ -96,7 +96,6 @@
     }
 
     .right {
-      .customImgContainer {
         display: flex;
         align-items: center;
         gap: 1.5rem;
@@ -127,7 +126,6 @@
             object-fit: cover;
           }
         }
-      }
     }
   }
 }

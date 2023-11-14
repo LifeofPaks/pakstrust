@@ -8,6 +8,7 @@ import Image from "next/image";
 import { store } from "@/hooks/store";
 import Youtube from "../Youtube/Youtube";
 import Loader from "react-loaders";
+import ActiveUser from "../Floating/ActiveUser/ActiveUser";
 
 const Hero = () => {
   const { togglePlayVideo } = store();
@@ -78,32 +79,22 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.customImgContainer}>
-            <div className={`${styles.imgWrap} ${styles.high}`}>
-              <div className={styles.cut}></div>
-              <Image
-                src="/m1.webp"
-                alt="hero-img"
-                width={280}
-                height={480}
-              />
-            </div>
-
-            <div className={`${styles.imgWrap} ${styles.low}`}>
-              <div className={styles.cut}></div>
-              <Image
-                src="/w1.jpeg"
-                alt="hero-img"
-                width={280}
-                height={480}
-              />
-            </div>
+          <div className={`${styles.imgWrap} ${styles.high}`}>
+            <div className={styles.cut}></div>
+            <Image src="/m1.webp" alt="hero-img" width={280} height={480} />
           </div>
+
+          <div className={`${styles.imgWrap} ${styles.low}`}>
+            <div className={styles.cut}></div>
+            <Image src="/w1.jpeg" alt="hero-img" width={280} height={480} />
+          </div>
+
         </div>
+          <ActiveUser/>
       </div>
       <Youtube />
 
-      <Loader active type="pacman" />
+      <Loader active type="square-spin" />
     </div>
   );
 };
