@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { store } from '@/hooks/store'
 
 const PopupCta = () => {
-  const {showCTA} = store()
+  const {showCTA, toggleShowCTA} = store()
   return (
     <div className={`${styles.popup} ${showCTA ? styles.show : ''}`}>
-      <Link className={styles.link} href='/login'>Sign In</Link>
+      <Link onClick={toggleShowCTA} className={styles.link} href='/login'>Sign In</Link>
       <hr />
-      <Link className={styles.link} href='/register'>Sign Up</Link>
+      <Link onClick={toggleShowCTA} className={styles.link} href='/register'>Sign Up</Link>
     </div>
   )
 }

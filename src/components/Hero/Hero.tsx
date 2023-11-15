@@ -94,7 +94,7 @@ const Hero = () => {
       </div>
       <Youtube />
 
-      <Loader active type="square-spin" />
+      {/* <Loader active type="square-spin" /> */}
     </div>
   );
 };

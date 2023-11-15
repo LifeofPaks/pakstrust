@@ -4,6 +4,7 @@ import { currencyToolsData } from "@/data/data";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 
 const CurrencyTools = () => {
@@ -31,11 +32,15 @@ const CurrencyTools = () => {
                     <p className={styles.desc}>
                     {data.desc}
                     </p>
-                    <p className={styles.action}>{data.action} <FontAwesomeIcon className={styles.fIcon} icon={faAngleRight} /></p>
+                    <Link href='/login' className={styles.action}>{data.action} <FontAwesomeIcon className={styles.fIcon} icon={faAngleRight} /></Link>
                   </div>
                 ))
             }
 
+        <div className={styles.slideBtns}>
+            <div className={styles.sLeft}></div>
+            <div className={styles.right}></div>
+        </div>
         </div>
       </div>
     </div>

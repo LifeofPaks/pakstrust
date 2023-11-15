@@ -3,7 +3,7 @@ $primary-color : blue;
 @import 'loaders.css/src/animations/square-spin.scss';
 
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -83,31 +83,6 @@ button{
   
 }
 
-
-.slideX{
-  position: relative;
- 
-
-  &:hover{
-    &::before{
-      width: 100%;
-    }
-  }
-  
-  &::before{
-    content: '';
-    position: absolute;
-   
-    background: blue;
-    z-index: -1;
-    width: 0;
-    transition: .3s;
-
-   
-  }
-}
-
-
 .loader-active{
   display: block;
   position: fixed;
@@ -123,4 +98,12 @@ button{
   z-index: 100;
 }
 
+ .lText{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  color: blue;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
 
