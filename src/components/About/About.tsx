@@ -4,7 +4,8 @@ import Image from "next/image";
 import Companies from "@/brands/Logos/companies/Companies";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faAppStore } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
         </div>
         <div className={styles.right}>
           <p className={styles.lText}>ABOUT US</p>
-          <h1 className={styles.xlText}>We revolutionized Digital Banking</h1>
+          <h1 className={styles.xxlText}>We revolutionized Digital Banking</h1>
           <p className={styles.desc}>
             We've grown to become one of the largest digital banking providers,
             committed to inventing, simplifying, and humanizing the banking
@@ -32,8 +33,37 @@ const About = () => {
           </p>
 
           <div className={styles.row}>
-            <div className={styles.top}></div>
-            <div className={styles.bottom}></div>
+            <div className={styles.col}>
+            <div className={styles.slideY}>
+              <FontAwesomeIcon icon={faAppStore} className={styles.colIcon}/>
+              </div>
+
+
+              <div className={styles.details}>
+                <h2 className={styles.xlText}>Powerful Mobile & Online App</h2>
+
+                <p className={styles.dText}>
+                  Our mobile app service is quick and easy to use, and you can
+                  get it from your app store.
+                </p>
+              </div>
+            </div>
+            <div className={styles.col}>
+              <div className={styles.slideY}>
+              <FontAwesomeIcon icon={faRocket} className={styles.colIcon}/>
+              </div>
+
+              <div className={styles.details}>
+                <h2 className={styles.xlText}>
+                  Brings More Transperency & Speed
+                </h2>
+
+                <p className={styles.dText}>
+                  Our digital banking services are transparent and quick, and
+                  we're building a reliable network.
+                </p>
+              </div>
+            </div>
           </div>
 
           <Link href="/login">

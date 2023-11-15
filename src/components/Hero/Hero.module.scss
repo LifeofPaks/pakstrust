@@ -96,36 +96,36 @@
     }
 
     .right {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
 
-        .imgWrap {
-          position: relative;
-          overflow: hidden;
+      .imgWrap {
+        position: relative;
+        overflow: hidden;
 
-          &.high {
-            transform: translateY(-40px);
-          }
-
-          &.low {
-            transform: translateY(25px);
-          }
-
-          .cut {
-            width: 120px;
-            height: 50px;
-            background: #fafafa;
-            position: absolute;
-            transform: rotate(-35deg);
-            left: -2rem;
-            top: -0.8rem;
-          }
-
-          img {
-            object-fit: cover;
-          }
+        &.high {
+          transform: translateY(-40px);
         }
+
+        &.low {
+          transform: translateY(25px);
+        }
+
+        .cut {
+          width: 120px;
+          height: 50px;
+          background: #fafafa;
+          position: absolute;
+          transform: rotate(-35deg);
+          left: -2rem;
+          top: -0.8rem;
+        }
+
+        img {
+          object-fit: cover;
+        }
+      }
     }
   }
 }
