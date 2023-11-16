@@ -1,4 +1,4 @@
-import { CurrencyToolType } from "@/types/types";
+import { CurrencyToolType, ExchangeDataType } from "@/types/types";
 
 export const currencyToolsData: CurrencyToolType[] = [
   {
@@ -31,6 +31,73 @@ export const currencyToolsData: CurrencyToolType[] = [
     desc: "create a free digital bank account with ud today to send money all around the world",
     action: "get started",
     icon: "/user.png",
+  },
+];
 
+export const exchangeData: ExchangeDataType[] = [
+  {
+    id: 1,
+    flag: "/us.png",
+    title: "Us Dollar",
+    amount: "120.54",
+    change: "+0.50%",
+    chart: "/g1.svg",
+    send: "Send",
+    loss: false,
+  },
+
+  {
+    id: 2,
+    flag: "/japan.png",
+    title: "Japanese Yen",
+    amount: "107.54",
+    change: "+0.62 %",
+    chart: "/g2.svg",
+    send: "Send",
+    loss: false,
+  },
+
+  {
+    id: 3,
+    flag: "/britain.png",
+    title: "British Pound",
+    amount: "230.88.54",
+    change: "-0.12%",
+    chart: "/r1.svg",
+    send: "Send",
+    loss: true,
+  },
+
+  {
+    id: 4,
+    flag: "/nz.png",
+    title: "Newzland Dollar",
+    amount: "177.09.54",
+    change: "-0.27 %",
+    chart: "/r2.svg",
+    send: "Send",
+    loss: true,
+  },
+
+  {
+    id: 5,
+    flag: "/canada.png",
+    title: "Canadian Dollar",
+    amount: "227.84",
+    change: "-0.56%",
+    chart: "/r3.svg",
+    send: "Send",
+    loss: true,
+  },
+
+  {
+    id: 6,
+    flag: "/france.png",
+    title: "Swiss Franc",
+    amount: "182.62",
+    change: "+0.49 %",
+    chart: "/g3.svg",
+    send: "Send",
+    loss: false,
   },
 ];

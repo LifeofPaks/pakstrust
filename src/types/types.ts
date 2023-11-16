@@ -5,3 +5,16 @@ export type CurrencyToolType = {
     action: string,
     icon: string,
 }
+
+
+export type ExchangeDataType = {
+    id:  number,
+    flag:  string,
+    title:  string,
+    amount:  string,
+    change:  string,
+    chart:  string,
+    send:  string,
+    loss:  boolean,
+}
+

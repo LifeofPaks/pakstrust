@@ -5,7 +5,6 @@
   background: #fff;
   display: flex;
   align-items: center;
-  gap: 4rem;
 
   .left {
     width: 50%;
@@ -96,7 +95,7 @@
   }
 
   .right {
-    width: 50%;
+    width: 60%;
     position: relative;
 
     .wraps {
@@ -128,13 +127,17 @@
             left: -2rem;
             top: -0.8rem;
           }
+
+          .lImg{
+            object-fit: cover;
+          }
       }
     }
 
     .flYel{
         position: absolute;
         width: 45px;
-        right: -1rem;
+        right: 0;
         top: -2rem;
         border-radius: 40% 40% 50% 70%;
         animation: bounce 1.5s 1.5s ease-in-out infinite;
@@ -146,7 +149,7 @@
         left: -2rem;
         border-radius: 70% 70% 110% 170%;
         animation: slide 3.5s 2s ease-in-out infinite;
-        width: 50px;
+        width: 54px;
         z-index: 11;
     }
   }

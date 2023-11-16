@@ -1,0 +1,56 @@
+.container{
+   padding: 5rem 6%; 
+   background: #fff;
+
+   .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .tText{
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px;
+        color: blue;
+        letter-spacing: 3px;
+        margin-bottom: 1.5rem;
+    }
+
+    .xlText{
+        width: 600px;
+        margin:  0 auto;
+        line-height: 50px;
+    }
+   }
+
+   .table{
+
+
+    .tHead{
+        color: #fff;
+        font-weight: 500;
+        background: #000;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        padding: .6rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .edit{
+
+            button{
+                background: blue;
+                color: #fff;    
+                height: 40px;
+                width: 70px;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 2px;
+                border-radius: 5px;
+            }
+           
+        }
+    }
+   }
+}

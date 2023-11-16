@@ -42,18 +42,18 @@ const ChooseUs = () => {
           <div className={styles.col}>
             <div className={styles.imgWrap}>
               <div className={styles.cut}></div>
-              <Image src="/c1.jpeg" alt="cu-img" width={280} height={229} />
+              <Image src="/c1.jpeg" alt="cu-img" width={300} height={300} />
             </div>
 
             <div className={styles.imgWrap}>
               <div className={styles.cut}></div>
-              <Image src="/c2.jpeg" alt="cu-img" width={280} height={229} />
+              <Image src="/c2.jpeg" alt="cu-img" width={300} height={300} />
             </div>
           </div>
 
           <div className={styles.imgWrap}>
             <div className={styles.cut}></div>
-            <Image src="/c3.jpeg" alt="cu-img" width={280} height={480} />
+            <Image src="/c3.jpeg" alt="cu-img" width={300} height={625} className={styles.lImg} />
           </div>
 
           <svg
@@ -75,9 +75,11 @@ const ChooseUs = () => {
         >
           <path
             d="M 0 0 C -0.137 4.036 3.041 4.402 4.644 3.657 C 5.487 2.63 5.389 1.758 3.195 1.069 C 1.944 0.422 0.763 -1.771 0.004 -0.013"
-            fill="#118a7e"
+            fill="#18a188"
           />
         </svg>
+
+    
       </div>
     </div>
   );
