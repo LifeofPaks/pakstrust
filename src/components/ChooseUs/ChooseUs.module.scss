@@ -110,7 +110,6 @@
         gap: 1.2rem;
 
         img {
-          height: 229px;
           object-fit: cover;
         }
       }
@@ -118,9 +117,10 @@
       .imgWrap {
         position: relative;
         overflow: hidden;
+        z-index: 10;
 
         .cut {
-            width: 120px;
+            width: 110px;
             height: 40px;
             background: #fff;
             position: absolute;
@@ -146,7 +146,8 @@
         left: -2rem;
         border-radius: 70% 70% 110% 170%;
         animation: slide 3.5s 2s ease-in-out infinite;
-        width: 60px;
+        width: 50px;
+        z-index: 11;
     }
   }
 

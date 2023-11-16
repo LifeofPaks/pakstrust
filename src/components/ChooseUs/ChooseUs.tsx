@@ -42,12 +42,12 @@ const ChooseUs = () => {
           <div className={styles.col}>
             <div className={styles.imgWrap}>
               <div className={styles.cut}></div>
-              <Image src="/c1.jpeg" alt="cu-img" width={280} height={480} />
+              <Image src="/c1.jpeg" alt="cu-img" width={280} height={229} />
             </div>
 
             <div className={styles.imgWrap}>
               <div className={styles.cut}></div>
-              <Image src="/c2.jpeg" alt="cu-img" width={280} height={480} />
+              <Image src="/c2.jpeg" alt="cu-img" width={280} height={229} />
             </div>
           </div>
 
@@ -55,18 +55,18 @@ const ChooseUs = () => {
             <div className={styles.cut}></div>
             <Image src="/c3.jpeg" alt="cu-img" width={280} height={480} />
           </div>
-        </div>
 
-        <svg
-          className={styles.flYel}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="-0.639819 -0.015 3.979 5.453"
-        >
-          <path
-            d="M 0 0 C 3.709 0.665 3.794 3.362 2.796 5.146 C 0.97 6.165 1.182 4.296 0.651 2.895 C 0.4317 1.925 -1.664 0.559 -0.007 -0.015"
-            fill="#ffc85b"
-          />
-        </svg>
+          <svg
+            className={styles.flYel}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="-0.639819 -0.015 3.979 5.453"
+          >
+            <path
+              d="M 0 0 C 3.709 0.665 3.794 3.362 2.796 5.146 C 0.97 6.165 1.182 4.296 0.651 2.895 C 0.4317 1.925 -1.664 0.559 -0.007 -0.015"
+              fill="#ffc85b"
+            />
+          </svg>
+        </div>
 
         <svg
           className={styles.flGreen}
