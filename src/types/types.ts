@@ -18,3 +18,9 @@ export type ExchangeDataType = {
     loss:  boolean,
 }
 
+export type BenefitsDataType ={
+    id: number,
+    title: string,
+    image: string
+}
+

@@ -1,4 +1,4 @@
-import { CurrencyToolType, ExchangeDataType } from "@/types/types";
+import { BenefitsDataType, CurrencyToolType, ExchangeDataType } from "@/types/types";
 
 export const currencyToolsData: CurrencyToolType[] = [
   {
@@ -101,3 +101,41 @@ export const exchangeData: ExchangeDataType[] = [
     loss: false,
   },
 ];
+
+export const benefitsData: BenefitsDataType[] = [
+  {
+    id: 1,
+    title : ' Global Coverage',
+    image: '/globe.png'
+  },
+
+  {
+    id: 2,
+    title : 'Easy Transfer Method',
+    image: '/moneybag.png'
+  },
+
+  {
+    id: 3,
+    title : 'Global 24 / 7 Support',
+    image: '/alert.png'
+  },
+
+  {
+    id: 4,
+    title : 'Lowest Fee',
+    image: '/circulate.png'
+  },
+
+  {
+    id: 5,
+    title : 'Instant Processing',
+    image: '/process.png'
+  },
+
+  {
+    id: 6,
+    title : 'Bank Level Security',
+    image: '/protect.png'
+  },
+]
