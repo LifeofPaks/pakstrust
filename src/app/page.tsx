@@ -4,6 +4,7 @@ import About from '@/components/About/About'
 import CurrencyTools from '@/components/CurrencyTools/CurrencyTools'
 import ChooseUs from '@/components/ChooseUs/ChooseUs'
 import LiveExchange from '@/components/LiveExchange'
+import Benefits from '@/components/Benefits/Benefits'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <CurrencyTools/>
       <ChooseUs/>
       <LiveExchange/>
+      <Benefits/>
     </main>
   )
 }

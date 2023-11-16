@@ -1,56 +1,206 @@
-.container{
-   padding: 5rem 6%; 
-   background: #fff;
+.container {
+  padding: 5rem 6%;
+  background: #fff;
 
-   .title{
+  .title {
     width: 100%;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
-    .tText{
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 18px;
-        color: blue;
-        letter-spacing: 3px;
-        margin-bottom: 1.5rem;
+    .tText {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 18px;
+      color: blue;
+      letter-spacing: 3px;
+      margin-bottom: 1.5rem;
     }
 
-    .xlText{
-        width: 600px;
-        margin:  0 auto;
-        line-height: 50px;
+    .xlText {
+      width: 600px;
+      margin: 0 auto;
+      line-height: 50px;
     }
-   }
+  }
 
-   .table{
+  .table {
+    padding: 1rem;
+    transition: .3s;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
 
-
-    .tHead{
-        color: #fff;
-        font-weight: 500;
+    &.invert{
         background: #000;
-        margin-bottom: 1rem;
-        border-radius: 5px;
-        padding: .6rem 1rem;
+        color: #fff;
+    }
+
+
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .tHead {
+      color: #fff;
+      font-weight: 500;
+      background: #000;
+      margin-bottom: 2rem;
+      border-radius: 5px;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: .3s;
+
+      &.invert{
+        background: #FFF;
+        color: #000;
+    }
+
+
+      .toggle{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        .toggler{
+            width: 35px;
+            background: #fff;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: .3s;
+            
+            &.tr{
+                padding-left: .9rem;
+                background: blue;
+                
+            }
+            
+            .ball{
+                height: 18px;
+                width: 18px;
+                border-radius: 50%;
+                background: blue;
+                margin: 1px;
+                transition: .3s;
+
+                &.invert{
+                    background: #fff;
+                }
+            }
+          }
+      }
+      
+
+      .edit {
+        button {
+          background: blue;
+          color: #fff;
+          padding-inline: 1rem;
+          height: 40px;
+          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: 2px;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .tData {
+      padding-inline: 0.5rem;
+
+      .row {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
 
-        .edit{
+        .col {
+          p {
+            text-align: left;
+            width: 200px;
+            transform: translateX(4rem);
+          }
 
-            button{
-                background: blue;
-                color: #fff;    
-                height: 40px;
-                width: 70px;
-                text-transform: uppercase;
-                font-size: 13px;
-                letter-spacing: 2px;
-                border-radius: 5px;
+          .imgWraps {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+
+            img {
+              border-radius: 50%;
+              object-fit: cover;
             }
-           
+
+            .text {
+              position: absolute;
+              left: -1.5rem;
+            }
+          }
+
+          .btn {
+            background: blue;
+            color: #fff;
+            padding-inline: 1rem;
+            height: 40px;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 2px;
+            border-radius: 5px;
+          }
+
+          .chart {
+            transform: translateX(-3rem);
+          }
+
+          .amount {
+            transform: translateX(7.5rem);
+          }
+
+          .change {
+            transform: translateX(2.5rem);
+          }
         }
+      }
     }
-   }
+
+    .add {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+
+      p{
+        font-size: 14px;
+    }
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        
+        .imgWraps{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            background: blue;
+        }
+      }
+
+      .right{
+        
+        p{
+            color: #777;
+        }
+      }
+    }
+  }
 }
