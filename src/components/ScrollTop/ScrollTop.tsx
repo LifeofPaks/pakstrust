@@ -33,10 +33,10 @@ const ScrollTop = () => {
 
         <Image
           className={styles.shape}
-          src="/shape.svg"
+          src="/drop.png"
           alt="shape"
-          width={45}
-          height={45}
+          width={59}
+          height={59}
         />
       </div>
     </div>

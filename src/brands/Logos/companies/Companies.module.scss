@@ -1,20 +1,44 @@
 @import "../../../styles/Responsive.scss";
 
 .companies {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 
-  img {
-    object-fit: contain;
-    opacity: 0.4;
-    transition: 0.3s;
-    cursor: pointer;
+  .scroller {
+    width: 85vw;
 
-    &:hover {
-      opacity: 1;
-      transform: scale(1.05);
+    overflow: hidden;
+    margin: 0 auto;
+
+    .inner {
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      justify-content: space-between;
+      animation: scroll 20s linear infinite;
+      width: calc(90px * 8);
+      perspective: 100%;
+
+      &:hover{
+        animation-play-state: paused;
+      }
+
+      img {
+        object-fit: contain;
+        opacity: 0.4;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.15);
+        }
+      }
     }
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-154px * 8));
   }
 }
