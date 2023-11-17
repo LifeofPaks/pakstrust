@@ -24,3 +24,9 @@ export type BenefitsDataType ={
     image: string
 }
 
+export type CurrecnyProfileDataType = {
+    id:  number,
+    flag:  string,
+    title:  string,
+}
+

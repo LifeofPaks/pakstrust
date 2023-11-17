@@ -74,17 +74,17 @@
             transition: .3s;
             
             &.tr{
-                padding-left: .9rem;
+                padding-left: .87rem;
                 background: blue;
                 
             }
             
             .ball{
-                height: 18px;
-                width: 18px;
+                height: 16px;
+                width: 16px;
                 border-radius: 50%;
                 background: blue;
-                margin: 1px;
+                margin: 2px;
                 transition: .3s;
 
                 &.invert{
@@ -125,6 +125,7 @@
             text-align: left;
             width: 200px;
             transform: translateX(4rem);
+            font-size: 14px;
           }
 
           .imgWraps {
@@ -196,9 +197,19 @@
       }
 
       .right{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         
         p{
             color: #777;
+        }
+
+        .dot{
+          height: 8px;
+          width: 8px;
+          background: blue;
+          border-radius: 50%;
         }
       }
     }

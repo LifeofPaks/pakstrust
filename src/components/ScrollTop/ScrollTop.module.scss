@@ -1,0 +1,59 @@
+@import "../../styles/Responsive.scss";
+
+.container {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  right: 2rem;
+  bottom: 15rem;
+  animation: bounce 1.5s 1.5s ease-in-out infinite;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 3rem;
+  }
+
+  .imgWraps {
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &.arrow {
+        z-index: 1;
+      }
+    }
+
+    .shadow {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: #0000001e;
+      bottom: -1px;
+      right: 5px;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}

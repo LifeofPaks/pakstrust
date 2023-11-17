@@ -1,4 +1,4 @@
-import { BenefitsDataType, CurrencyToolType, ExchangeDataType } from "@/types/types";
+import { BenefitsDataType, CurrecnyProfileDataType, CurrencyToolType, ExchangeDataType } from "@/types/types";
 
 export const currencyToolsData: CurrencyToolType[] = [
   {
@@ -139,3 +139,60 @@ export const benefitsData: BenefitsDataType[] = [
     image: '/protect.png'
   },
 ]
+
+
+export const currecnyProfileData: CurrecnyProfileDataType[] = [
+  {
+    id: 1,
+    flag: "/us.png",
+    title: "USD - US Dollar",
+  },
+
+  {
+    id: 2,
+    flag: "/japan.png",
+    title: "JPY - Japaneese Yen",
+  },
+
+  {
+    id: 3,
+    flag: "/britain.png",
+    title: "GBP - British Pound",
+  },
+
+  {
+    id: 4,
+    flag: "/nz.png",
+    title: "NZD - NZ Dollar",
+  },
+
+  {
+    id: 5,
+    flag: "/canada.png",
+    title: "CAD - Canadian Dollar",
+  },
+
+  {
+    id: 6,
+    flag: "/france.png",
+    title: "CHF - Swiss Franc",
+  },
+
+  {
+    id: 7,
+    flag: "/china.png",
+    title: "CNY - Chinese Yuan",
+  },
+
+  {
+    id: 8,
+    flag: "/korea.png",
+    title: "KRW - South Korean won",
+  },
+
+  {
+    id: 9,
+    flag: "/euro.png",
+    title: "EUR - Euro",
+  },
+];

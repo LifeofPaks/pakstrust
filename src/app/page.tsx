@@ -5,6 +5,8 @@ import CurrencyTools from '@/components/CurrencyTools/CurrencyTools'
 import ChooseUs from '@/components/ChooseUs/ChooseUs'
 import LiveExchange from '@/components/LiveExchange'
 import Benefits from '@/components/Benefits/Benefits'
+import CurrencyProfile from '@/components/CurrencyProfile/CurrencyProfile'
+import ScrollTop from '@/components/ScrollTop/ScrollTop'
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <ChooseUs/>
       <LiveExchange/>
       <Benefits/>
+      <CurrencyProfile/>
+      <ScrollTop/>
     </main>
   )
 }
