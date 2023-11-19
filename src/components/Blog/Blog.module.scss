@@ -1,0 +1,92 @@
+@import "../../styles/Responsive.scss";
+
+.container {
+  padding: 5rem 6%;
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    .xlText {
+      width: 600px;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .card {
+      width: 450px;
+      height: max-content;
+      position: relative;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      padding-bottom: 1rem;
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+
+        .blogTitle {
+          color: blue;
+        }
+
+        .type{
+            opacity: 1;
+        }
+      }
+
+      p {
+        color: #555;
+        font-size: 14px;
+      }
+
+      img {
+        object-fit: cover;
+        transition: 1s;
+      }
+
+      .content {
+        padding: 1rem;
+
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+
+          .col {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+          }
+        }
+
+        .blogTitle {
+          font-size: 22px;
+          transition: 0.5s;
+        }
+      }
+
+      .type {
+        background: blue;
+        color: #fff;
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        font-size: 14px;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        opacity: 0;
+        transition: .5s;
+      }
+    }
+  }
+}

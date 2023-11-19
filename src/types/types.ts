@@ -38,3 +38,11 @@ export type reviewDataType ={
     desc: string,
   }
 
+  export type BlogDataType = {
+    id: number,
+    title: string
+    image: string,
+    type: string
+    date: string
+  }
+

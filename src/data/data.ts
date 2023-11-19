@@ -1,5 +1,6 @@
 import {
   BenefitsDataType,
+  BlogDataType,
   CurrecnyProfileDataType,
   CurrencyToolType,
   ExchangeDataType,
@@ -243,3 +244,29 @@ export const reviewData: reviewDataType[] = [
     desc: ". It’s a rare thing to discover a bank that genuinely cares about the people it serves and Rivero Trust Bank  is that kind of bank. They’ve always shown me kindness, respect, and a friendly smile. I can’t recommend them enough for all your banking needs – you won’t be disappointed!",
   },
 ];
+
+export const blogData: BlogDataType[] = [
+  {
+    id: 1,
+    title : '5 Things You Need To Know Before Starting Business',
+    image: '/bl1.jpeg',
+    type: 'corporate',
+    date: 'Oct 22, 2023'
+  },
+
+  {
+    id: 2,
+    title : 'Effect Of Inflation On Our Daily Expenditure',
+    image: '/bl2.jpeg',
+    type: 'Consumer',
+    date: 'Oct 15, 2023'
+  },
+  {
+    id: 3,
+    title : '7 Tips To Get Best Exchange Rate In Currency',
+    image: '/bl3.jpeg',
+    type: 'Finance',
+    date: 'Sept 04, 2023'
+  },
+
+]
