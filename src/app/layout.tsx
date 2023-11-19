@@ -6,8 +6,9 @@ import Footer from "@/components/Footer/Footer";
 import 'animate.css'
 
 const rubik = Rubik({
-  subsets: ["latin"],
   weight: ["400", "500", "900", "700"],
+  subsets: ["latin"],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {

@@ -1,4 +1,10 @@
-import { BenefitsDataType, CurrecnyProfileDataType, CurrencyToolType, ExchangeDataType } from "@/types/types";
+import {
+  BenefitsDataType,
+  CurrecnyProfileDataType,
+  CurrencyToolType,
+  ExchangeDataType,
+  reviewDataType,
+} from "@/types/types";
 
 export const currencyToolsData: CurrencyToolType[] = [
   {
@@ -105,41 +111,40 @@ export const exchangeData: ExchangeDataType[] = [
 export const benefitsData: BenefitsDataType[] = [
   {
     id: 1,
-    title : ' Global Coverage',
-    image: '/globe.png'
+    title: " Global Coverage",
+    image: "/globe.png",
   },
 
   {
     id: 2,
-    title : 'Easy Transfer Method',
-    image: '/moneybag.png'
+    title: "Easy Transfer Method",
+    image: "/moneybag.png",
   },
 
   {
     id: 3,
-    title : 'Global 24 / 7 Support',
-    image: '/alert.png'
+    title: "Global 24 / 7 Support",
+    image: "/alert.png",
   },
 
   {
     id: 4,
-    title : 'Lowest Fee',
-    image: '/circulate.png'
+    title: "Lowest Fee",
+    image: "/circulate.png",
   },
 
   {
     id: 5,
-    title : 'Instant Processing',
-    image: '/process.png'
+    title: "Instant Processing",
+    image: "/process.png",
   },
 
   {
     id: 6,
-    title : 'Bank Level Security',
-    image: '/protect.png'
+    title: "Bank Level Security",
+    image: "/protect.png",
   },
-]
-
+];
 
 export const currecnyProfileData: CurrecnyProfileDataType[] = [
   {
@@ -194,5 +199,47 @@ export const currecnyProfileData: CurrecnyProfileDataType[] = [
     id: 9,
     flag: "/euro.png",
     title: "EUR - Euro",
+  },
+];
+
+export const reviewData: reviewDataType[] = [
+  {
+    id: 1,
+    avatar: "/aw3.jpeg",
+    name: "Alex Cruise",
+    office: "CEO, IBAC",
+    desc: "I opened a savings and checking account at Rivero Trust Bank in Oregon, The Teller who helped me was a pleasure to work with, she made my day a pleasant day. Thank you for the terrific customer service.",
+  },
+
+  {
+    id: 2,
+    avatar: "/avm1.jpeg",
+    name: "Tom Haris",
+    office: "Engineer, Olleo",
+    desc: " Rivero Trust Bank has an awesome team and a dedicated staff. I am very impressed by their vision, hard work, outstanding performance, and wonferful team-mates. Their reputation is well-earned.",
+  },
+
+  {
+    id: 4,
+    avatar: "/aw2.jpeg",
+    name: "Claire Santos",
+    office: "Director, BAT",
+    desc: "Have been using Rivero Trust Bank  sense I was 16 years old. Wonderful staff and fast technology with them. If I had a problem, they fix it right away. I’m loving (BN) and I plan on sticking with them for life. Good Job guys.👍🏼 ",
+  },
+
+  {
+    id: 5,
+    avatar: "/avm2.jpeg",
+    name: "Matt Donovan",
+    office: "MD, Itec",
+    desc: "The sweetest, most accommodating, professional, proficient bank in these United States. I have never encountered a bank that totally helps as well as understands their customers. The manager at Rivero Trust Bank is ABSOLUTELY the best ever.",
+  },
+
+  {
+    id: 6,
+    avatar: "/avm3.jpeg",
+    name: "Harry Jackson",
+    office: "Enterprenuer",
+    desc: ". It’s a rare thing to discover a bank that genuinely cares about the people it serves and Rivero Trust Bank  is that kind of bank. They’ve always shown me kindness, respect, and a friendly smile. I can’t recommend them enough for all your banking needs – you won’t be disappointed!",
   },
 ];

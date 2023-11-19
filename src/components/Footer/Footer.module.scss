@@ -85,7 +85,7 @@
 
                     a{
                         color: #ccc;
-                        font-size: 13px;
+                        font-size: 14px;
                         transition: .3s;
 
                         &:hover{
@@ -122,9 +122,9 @@
 
     .cp{
         width: 100%;
-        border-top: 1px solid #ccc;
+        border-top: .5px solid #cccccc7d;
         padding-top: 2rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         text-align: center;
 
         .cpText{

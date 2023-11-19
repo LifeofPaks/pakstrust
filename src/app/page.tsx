@@ -7,6 +7,7 @@ import LiveExchange from '@/components/LiveExchange'
 import Benefits from '@/components/Benefits/Benefits'
 import CurrencyProfile from '@/components/CurrencyProfile/CurrencyProfile'
 import ScrollTop from '@/components/ScrollTop/ScrollTop'
+import Reviews from '@/components/Reviews/Reviews'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <LiveExchange/>
       <Benefits/>
       <CurrencyProfile/>
+      <Reviews/>
       <ScrollTop/>
     </main>
   )

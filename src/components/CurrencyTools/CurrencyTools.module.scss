@@ -42,6 +42,7 @@
       width: 90vw;
       margin: 0 auto;
       gap: 1rem;
+      overscroll-behavior-inline: contain;
 
       &::-webkit-scrollbar {
         display: none;

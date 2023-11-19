@@ -8,7 +8,6 @@ import { store } from "@/hooks/store";
 const LiveExchange = () => {
   const { inverse, toggleInverse } = store();
 
-  console.log(inverse)
 
   return (
     <div className={styles.container}>

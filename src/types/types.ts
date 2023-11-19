@@ -30,3 +30,11 @@ export type CurrecnyProfileDataType = {
     title:  string,
 }
 
+export type reviewDataType ={
+    id: number,
+    avatar: string,
+    name: string,
+    office: string,
+    desc: string,
+  }
+
