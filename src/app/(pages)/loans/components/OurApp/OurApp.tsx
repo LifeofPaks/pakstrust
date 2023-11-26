@@ -15,14 +15,12 @@ const OurApp = () => {
         />
       </div>
       <div className={styles.right}>
-        <p className="tText">OUR APP</p>
-        <h1>Let's Answer Some Of Your Questions Or Download Our App</h1>
+        <p className="tText">OUR LOANS</p>
+        <h1>Finance your next car</h1>
         <p className="text">
-          Our digital banking platform is up to date and completely trustworthy.
-          You can use your mobile to perform transactions, loan requests, and
-          credit card transactions.
+        Are you looking for a car loan for a new or used vehicle? In minutes, find out if you're pre-qualified for financing with no influence on your credit score. Also, before visiting a participating dealer, make sure you understand your loan terms.
         </p>
-        <h2>Over 9.2 million Downloads Worldwide</h2>
+        <h2>Over 700K+ approved loans</h2>
         <div className={styles.appWraps}>
           <Link href="/">
             <Image

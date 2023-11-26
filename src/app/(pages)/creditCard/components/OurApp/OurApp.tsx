@@ -15,14 +15,12 @@ const OurApp = () => {
         />
       </div>
       <div className={styles.right}>
-        <p className="tText">OUR APP</p>
-        <h1>Let's Answer Some Of Your Questions Or Download Our App</h1>
+        <p className="tText">OUR CARDS</p>
+        <h1>Protect Your Card From Anywhere</h1>
         <p className="text">
-          Our digital banking platform is up to date and completely trustworthy.
-          You can use your mobile to perform transactions, loan requests, and
-          credit card transactions.
+        Leave your card at the restaurant or drop it at the concert? Instantly lock your card with a few taps. And if you find it, unlock it just as fast.
         </p>
-        <h2>Over 9.2 million Downloads Worldwide</h2>
+        <h2>Over 2 million credit card users</h2>
         <div className={styles.appWraps}>
           <Link href="/">
             <Image
