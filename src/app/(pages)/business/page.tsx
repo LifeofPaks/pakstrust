@@ -1,9 +1,21 @@
+
 import React from 'react'
-import styles from './Business.module.scss'
+import HeroBusiness from './components/HeroBusiness'
+import ScrollTop from '@/components/ScrollTop/ScrollTop'
+import Introduction from './components/Introduction/Introduction'
+import AppList from './components/AppList/AppList'
+import OurApp from './components/OurApp/OurApp'
+
 
 const Business = () => {
+ 
   return (
-    <section className={styles.container}>Business Page</section>
+    <>
+  <HeroBusiness/>
+  <Introduction/>
+  <OurApp/>
+  <ScrollTop/>
+    </>
   )
 }
 

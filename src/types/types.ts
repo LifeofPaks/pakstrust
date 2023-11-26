@@ -44,5 +44,6 @@ export type reviewDataType ={
     image: string,
     type: string
     date: string
+    link : string
   }
 

@@ -16,7 +16,7 @@ const Blog = () => {
 
       <div className={styles.wrapper}>
         {blogData.map((data) => (
-          <Link href='/' className={styles.card}>
+          <Link href={data.link} target="_blank" className={styles.card}>
             <Image src={data.image} alt="blog-img" width={450} height={300} />
             <div className={styles.content}>
               <div className={styles.row}>

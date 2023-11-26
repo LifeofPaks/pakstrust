@@ -1,3 +1,60 @@
-.container{
-    
-}
+.container {
+    margin-top: 6rem;
+    .hero {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 50vh;
+      background-image: linear-gradient(
+          to right,
+          rgba(30, 30, 121, 0.706),
+          rgb(2, 2, 2),
+        ),
+        url("https://www.nerdwallet.com/assets/blog/wp-content/uploads/2023/04/GettyImages-1082471058-2400x1440.jpg");
+      background-size: cover;
+      background-position: center;
+  
+      h1{
+          font-size: 40px;
+          margin-bottom: 2rem;
+      }
+  
+      .navlinks {
+        display: flex;
+        gap: 2rem;
+        li{
+          color: #fff;
+  
+          .link {
+              transition: 0.3s;
+              display: flex;
+              align-items: center;
+              gap: .5rem;
+      
+              &:hover {
+                color: blue;
+              }
+      
+              &.active {
+                position: relative;
+                color: rgb(7, 7, 254);
+                transition: 0.3s;
+              }
+      
+              .bullet {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: blue;
+              }
+            }
+  
+        }
+       
+      }
+    }
+  }
+  

@@ -38,6 +38,16 @@ const Navlinks = () => {
         </li>
         <li>
           <Link
+            href="/Personal"
+            className={`${styles.link} ${
+              pathname === "/Personal" ? `${styles.active}` : ""
+            }`}
+          >
+            Personal
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/creditCard"
             className={`${styles.link} ${
               pathname === "/creditCard" ? `${styles.active}` : ""

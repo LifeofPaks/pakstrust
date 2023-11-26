@@ -1,16 +1,15 @@
 'use client'
 import React from 'react'
-import styles from './creditCard.module.scss'
+import styles from '../Business.module.scss'
+import Link from 'next/link'
 import { usePathname } from "next/navigation";
-import Link from 'next/link';
 
-const CreditCard = () => {
-  const pathname = usePathname();
-
+const HeroBusiness = () => {
+    const pathname = usePathname();
   return (
     <section className={styles.container}>
       <div className={styles.hero}>
-        <h1>Credit Cards</h1>
+        <h1>Business Banking</h1>
       <ul className={styles.navlinks}>
         <li>
           <Link
@@ -26,11 +25,11 @@ const CreditCard = () => {
           <Link
             href="/business"
             className={`${styles.link} ${
-              pathname === "/creditCard" ? `${styles.active}` : ""
+              pathname === "/business" ? `${styles.active}` : ""
             }`}
           >
             <div className={styles.bullet}></div>
-            Credit Cards
+            Business Banking
           </Link>
         </li>
 
@@ -40,4 +39,4 @@ const CreditCard = () => {
   )
 }
 
-export default CreditCard
+export default HeroBusiness

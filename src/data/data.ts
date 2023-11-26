@@ -251,7 +251,8 @@ export const blogData: BlogDataType[] = [
     title : '5 Things You Need To Know Before Starting Business',
     image: '/bl1.jpeg',
     type: 'corporate',
-    date: 'Oct 22, 2023'
+    date: 'Oct 22, 2023',
+    link: 'https://manychat.com/blog/how-to-start-a-successful-business/?utm_source=google&utm_medium=search&utm_campaign=dynamic-search&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn8FapjHK96m-eSDps8Fg-v_CPEv5V30YAmUZ3oZI3MPlFxhDXlvfbBoCwK8QAvD_BwE'
   },
 
   {
@@ -259,14 +260,54 @@ export const blogData: BlogDataType[] = [
     title : 'Effect Of Inflation On Our Daily Expenditure',
     image: '/bl2.jpeg',
     type: 'Consumer',
-    date: 'Oct 15, 2023'
+    date: 'Oct 15, 2023',
+    link: 'https://www.investopedia.com/articles/insights/122016/9-common-effects-inflation.asp'
   },
   {
     id: 3,
     title : '7 Tips To Get Best Exchange Rate In Currency',
     image: '/bl3.jpeg',
     type: 'Finance',
-    date: 'Sept 04, 2023'
+    date: 'Sept 04, 2023',
+    link: 'https://grey.co/blog/best-currency-exchange-rates'
   },
 
 ]
+
+export const applistData: BenefitsDataType[] = [
+  {
+    id: 1,
+    title: " Apple ios",
+    image: "/appleL.png",
+  },
+
+  {
+    id: 2,
+    title: "Google Android",
+    image: "/androidL.png",
+  },
+
+  {
+    id: 3,
+    title: "Alexa",
+    image: "/alexaL.png",
+  },
+
+  {
+    id: 4,
+    title: "Slack",
+    image: "/slackL.png",
+  },
+
+  {
+    id: 5,
+    title: "Google Assistant",
+    image: "/gaL.png",
+  },
+
+  {
+    id: 6,
+    title: "Facebook",
+    image: "/fbL.png",
+  },
+];
