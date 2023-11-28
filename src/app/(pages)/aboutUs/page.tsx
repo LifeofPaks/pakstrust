@@ -7,6 +7,7 @@ import ScrollTop from "@/components/ScrollTop/ScrollTop";
 import CurrencyTools from "@/components/CurrencyTools/CurrencyTools";
 import ChooseUs from "./components/ChooseUs/ChooseUs";
 import FunFacts from "./components/FunFacts/FunFacts";
+import OurApp from "../Personal/components/OurApp/OurApp";
 
 
 const aboutUs = () => {
@@ -21,6 +22,7 @@ const aboutUs = () => {
       <CurrencyTools />
       <ChooseUs />
       <FunFacts/>
+      <OurApp/>
       <ScrollTop />
     </div>
   );
