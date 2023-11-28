@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+  import type { Metadata } from "next";
+import { Raleway } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import 'animate.css'
 
-const rubik = Rubik({
-  weight: ["400", "500", "900", "700"],
+const raleway = Raleway({
+  weight: ["400", "500", "900", "700", "800"],
   subsets: ["latin"],
   display: 'swap',
 });
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={raleway.className}>
         <Navbar />
         {children}
         <Footer />

@@ -47,3 +47,10 @@ export type reviewDataType ={
     link : string
   }
 
+  export type SupportDataType = {
+    id: number,
+    title: string,
+    desc: string,
+    img: string,
+  }
+

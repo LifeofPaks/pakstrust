@@ -1,0 +1,62 @@
+@import '../../../styles/Responsive.scss';
+
+.container {
+    margin-top: 6rem;
+    .hero {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 50vh;
+      background-image: linear-gradient(
+          to right,
+          rgba(30, 30, 121, 0.706),
+          rgb(2, 2, 2),
+        ),
+        url("https://image.cnbcfm.com/api/v1/image/106968651-1635782370773-gettyimages-1255233449-jrff04543.jpeg?v=1635782407&w=929&h=523&vtcrop=y");
+      background-size: cover;
+      background-position: center;
+  
+      h1{
+          font-size: 40px;
+          margin-bottom: 2rem;
+      }
+  
+      .navlinks {
+        display: flex;
+        gap: 2rem;
+        li{
+          color: #fff;
+  
+          .link {
+              transition: 0.3s;
+              display: flex;
+              align-items: center;
+              gap: .5rem;
+      
+              &:hover {
+                color: blue;
+              }
+      
+              &.active {
+                position: relative;
+                color: rgb(7, 7, 254);
+                transition: 0.3s;
+              }
+      
+              .bullet {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: blue;
+              }
+            }
+  
+        }
+       
+      }
+    }
+  }
+  

@@ -4,6 +4,7 @@ import {
   CurrecnyProfileDataType,
   CurrencyToolType,
   ExchangeDataType,
+  SupportDataType,
   reviewDataType,
 } from "@/types/types";
 
@@ -311,3 +312,30 @@ export const applistData: BenefitsDataType[] = [
     image: "/fbL.png",
   },
 ];
+
+export const supportData: SupportDataType[] = [
+
+  {
+    id: 2,
+    title: 'Our Location',
+    desc: '301 East Water Street, Charlottesville, VA 22904 Virginia',
+    img: '/locationc.png',
+  },
+
+  {
+    id: 2,
+    title: 'Email us',
+    desc: 'support@riverotrust.com',
+    img: '/emailc.png',
+  },
+
+
+  {
+    id: 3,
+    title: 'Phone',
+    desc: '+123456789',
+    img: '/phonec.png',
+  },
+
+
+]

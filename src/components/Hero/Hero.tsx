@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
             <div className={styles.support}>
               <p className={styles.sText}>
-                Need Help? Contact our <Link href="/">digital support</Link> &
+                Need Help? Contact our <Link href="/support">digital support</Link> &
                 tell us about your query.
               </p>
             </div>

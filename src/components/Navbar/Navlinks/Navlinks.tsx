@@ -66,6 +66,18 @@ const Navlinks = () => {
             Loans
           </Link>
         </li>
+
+        <li>
+          <Link
+            href="/aboutUs"
+            className={`${styles.link} ${
+              pathname === "/aboutUs" ? `${styles.active}` : ""
+            }`}
+          >
+            About Us
+          </Link>
+        </li>
+
         <li>
           <Link
             href="/support"

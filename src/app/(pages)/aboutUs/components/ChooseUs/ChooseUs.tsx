@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ChooseUs.module.scss";
 import Image from "next/image";
+import FunFacts from "../FunFacts/FunFacts";
 
 const ChooseUs = () => {
   return (
@@ -38,48 +39,22 @@ const ChooseUs = () => {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.wraps}>
-          <div className={styles.col}>
-            <div className={styles.imgWrap}>
-              <div className={styles.cut}></div>
-              <Image src="/c1.jpeg" alt="cu-img" width={300} height={300} />
-            </div>
+        <div className={styles.layer}></div>
 
-            <div className={styles.imgWrap}>
-              <div className={styles.cut}></div>
-              <Image src="/c2.jpeg" alt="cu-img" width={300} height={300} />
-            </div>
-          </div>
-
-          <div className={styles.imgWrap}>
-            <div className={styles.cut}></div>
-            <Image src="/c3.jpeg" alt="cu-img" width={300} height={625} className={styles.lImg} />
-          </div>
-
-          <svg
-            className={styles.flYel}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="-0.639819 -0.015 3.979 5.453"
-          >
-            <path
-              d="M 0 0 C 3.709 0.665 3.794 3.362 2.796 5.146 C 0.97 6.165 1.182 4.296 0.651 2.895 C 0.4317 1.925 -1.664 0.559 -0.007 -0.015"
-              fill="#ffc85b"
-            />
-          </svg>
-        </div>
-
-        <svg
-          className={styles.flGreen}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="-0.00429054 -0.681287 5.139 4.649"
-        >
-          <path
-            d="M 0 0 C -0.137 4.036 3.041 4.402 4.644 3.657 C 5.487 2.63 5.389 1.758 3.195 1.069 C 1.944 0.422 0.763 -1.771 0.004 -0.013"
-            fill="#18a188"
-          />
-        </svg>
-
-    
+        <Image
+          src="/rt.jpeg"
+          alt="cu-img"
+          width={580}
+          height={625}
+          className={styles.lImg}
+        />
+        <Image
+          src="/circle.png"
+          alt="cu-img"
+          width={70}
+          height={70}
+          className={styles.circle}
+        />
       </div>
     </div>
   );

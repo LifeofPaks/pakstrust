@@ -45,19 +45,19 @@ const Footer = () => {
             <div className={styles.hr}></div>
             <ul>
               <li>
-                <Link href="/">About Us</Link>
+                <Link href="/aboutUs">About Us</Link>
               </li>
               <li>
-                <Link href="/">Business Banking</Link>
+                <Link href="/business">Business Banking</Link>
               </li>
               <li>
-                <Link href="/">Personal Banking</Link>
+                <Link href="/Personal">Personal Banking</Link>
               </li>
               <li>
-                <Link href="/">Credit Cards</Link>
+                <Link href="/creditCard">Credit Cards</Link>
               </li>
               <li>
-                <Link href="/">Loans</Link>
+                <Link href="/loans">Loans</Link>
               </li>
             </ul>
           </div>
@@ -67,7 +67,7 @@ const Footer = () => {
             <div className={styles.hr}></div>
             <ul>
               <li>
-                <Link href="/">Contact Us</Link>
+                <Link href="/support">Contact Us</Link>
               </li>
               <li>
                 <Link href="/">FAQ's</Link>
@@ -79,7 +79,7 @@ const Footer = () => {
                 <Link href="/">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/">Terms & Conditions</Link>
+                <Link href="/Terms">Terms & Conditions</Link>
               </li>
             </ul>
           </div>
@@ -89,19 +89,19 @@ const Footer = () => {
             <div className={styles.hr}></div>
             <ul>
               <li>
-                <Link href="/">Register/Login</Link>
+                <Link href="/register">Register/Login</Link>
               </li>
               <li>
-                <Link href="/">IBank Transfer</Link>
+                <Link href="/login">IBank Transfer</Link>
               </li>
               <li>
-                <Link href="/">USA Money Transfer</Link>
+                <Link href="/login">USA Money Transfer</Link>
               </li>
               <li>
-                <Link href="/">UK Money Transfer</Link>
+                <Link href="/login">UK Money Transfer</Link>
               </li>
               <li>
-                <Link href="/">Euro Money Transfer</Link>
+                <Link href="/login">Euro Money Transfer</Link>
               </li>
             </ul>
           </div>
@@ -149,7 +149,7 @@ const Footer = () => {
         <div className={styles.cp}>
           <p className={styles.cpText}>
             &copy; Copyright. All Rights Reserved By{" "}
-            <Link href="/">Rivero Trust Bank</Link>
+            <Link href="/about">Rivero Trust Bank</Link>
           </p>
         </div>
       </footer>

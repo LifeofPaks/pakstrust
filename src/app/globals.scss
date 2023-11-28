@@ -1,8 +1,9 @@
-$primary-color : blue;
-@import 'loaders.css/src/animations/square-spin.scss';
+$primary-color: blue;
+@import "loaders.css/src/animations/square-spin.scss";
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -19,9 +20,13 @@ body {
   background: #fafafa;
   min-height: 100vh;
 
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     display: none;
   }
+}
+h1,
+h2 {
+  font-weight: 800;
 }
 
 a {
@@ -29,27 +34,29 @@ a {
   text-decoration: none;
 }
 
-p{
-  font-weight: 300;
+p,
+li,
+a,
+label {
+  font-weight: 500;
 }
 
-li{
+li {
   list-style: none;
 }
 
-
-button, input{
+button,
+input {
   background: transparent;
   border: none;
   outline: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-
-.primaryBtn{
+.primaryBtn {
   background: blue;
   color: #fff;
   font-size: 13px;
@@ -62,33 +69,34 @@ button{
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transition: .4s;
+  transition: 0.4s;
 
-  &:hover{
-    &::before{
+  &:hover {
+    &::before {
       height: 380%;
       opacity: 1;
     }
   }
-  
-  &::before{
-    content: '';
+
+  &::before {
+    content: "";
     position: absolute;
-    left:50%;
-    right:50%;
+    left: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     height: 0;
-    transform: translate(-50%, -50%) rotate(35deg) ;
+    transform: translate(-50%, -50%) rotate(35deg);
     background: #222;
     z-index: -1;
-    transition: .4s;
+    transition: 0.4s;
     opacity: 0;
   }
-  
 }
 
-.loader-active{
+
+
+.loader-active {
   display: block;
   position: fixed;
   left: 0;
@@ -103,7 +111,7 @@ button{
   z-index: 100;
 }
 
-.tText{
+.tText {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 18px;
@@ -112,15 +120,14 @@ button{
   margin-bottom: 1.5rem;
 }
 
-.tHeading{
+.tHeading {
   width: 600px;
   margin-inline: auto;
   font-size: 24px;
   line-height: 35px;
 }
 
-.text{
+.text {
   color: #555;
   line-height: 25px;
 }
-

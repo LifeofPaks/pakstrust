@@ -8,9 +8,9 @@ const LoginForm = () => {
   return (
     <div className={styles.loginForm}>
       <div className={styles.heading}>
-        <h1 className={styles.title}>Sign In to Dominic Trust Bank</h1>
+        <h1 className={styles.title}>Sign In to Rivero Trust Bank</h1>
         <p className={styles.text}>
-          Access the Dominic Trust Bank panel using your email and password.
+          Access the Rivero Trust Bank panel using your email and password.
         </p>
       </div>
 

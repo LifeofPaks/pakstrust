@@ -2,6 +2,7 @@
 
 .container {
   margin-top: 6rem;
+
   .hero {
     color: #fff;
     display: flex;
@@ -15,7 +16,7 @@
         rgba(30, 30, 121, 0.706),
         rgb(2, 2, 2),
       ),
-      url("https://assets-global.website-files.com/64df87becc50773e856e8758/653fe0da0838666c37699307_pros-cons-debit-cards-blog.jpeg");
+      url("https://www.investopedia.com/thmb/8CxIyvj1X29EDMH66ZlNVBlXWPU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/studentusingacreditcard-bdaceaa304324520b7856fbfa4ae38fc.jpg");
     background-size: cover;
     background-position: center;
 
@@ -57,5 +58,15 @@
       }
      
     }
+
+   
+  }
+
+  .title{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    padding-block: 6rem 3rem;
+    background: #fff;
   }
 }

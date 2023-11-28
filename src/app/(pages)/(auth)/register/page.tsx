@@ -17,7 +17,7 @@ const Register = () => {
             <h1 className={styles.title}>Swift Money Transfer</h1>
             <p className={styles.text}>
               Swift and Secure Money Transfer to any bank account will become a
-              breeze with Dominic Trust Bank.
+              breeze with Rivero Trust Bank.
             </p>
           </div>
           <div className={styles.right}>
