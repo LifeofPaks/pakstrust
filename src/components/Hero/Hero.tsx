@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Hero.module.scss";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,9 +12,50 @@ import ActiveUser from "../Floating/ActiveUser/ActiveUser";
 const Hero = () => {
   const { togglePlayVideo } = store();
 
+  const [backgroundPosition, setBackgroundPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const { clientX: x, clientY: y } = e;
+    setBackgroundPosition({ x, y });
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
     <div className={styles.hero}>
       <div className={styles.container}>
+        <div
+          className={styles.bgImage1}
+          style={{
+            backgroundPosition: `${backgroundPosition.x / 35}px ${
+              backgroundPosition.y / 35
+            }px`,
+          }}
+        ></div>
+
+        <div
+          className={styles.bgImage2}
+          style={{
+            backgroundPosition: `${backgroundPosition.x / 35}px ${
+              backgroundPosition.y / 35
+            }px`,
+          }}
+        ></div>
+
+        <div
+          className={styles.bgImage3}
+          style={{
+            backgroundPosition: `${backgroundPosition.x / 35}px ${
+              backgroundPosition.y / 35
+            }px`,
+          }}
+        ></div>
+
         <div className={styles.left}>
           <p className={styles.text}>SIMPLE, QUICK, SECURED</p>
 
@@ -71,8 +112,9 @@ const Hero = () => {
             </div>
             <div className={styles.support}>
               <p className={styles.sText}>
-                Need Help? Contact our <Link href="/support">digital support</Link> &
-                tell us about your query.
+                Need Help? Contact our{" "}
+                <Link href="/support">digital support</Link> & tell us about
+                your query.
               </p>
             </div>
           </div>
@@ -87,12 +129,10 @@ const Hero = () => {
             <div className={styles.cut}></div>
             <Image src="/w1.jpeg" alt="hero-img" width={280} height={480} />
           </div>
-
         </div>
-          <ActiveUser/>
+        <ActiveUser />
       </div>
       <Youtube />
-
     </div>
   );
 };

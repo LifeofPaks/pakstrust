@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Introduction.module.scss'
 import AppList from '@/app/(pages)/business/components/AppList/AppList'
 import CardDetails from '../CardDetails/CardDetails'
+import MyLoader from '@/components/MyLoader/MyLoader'
 
 const Introduction = () => {
   return (
@@ -12,6 +13,10 @@ const Introduction = () => {
         </div>
             <CardDetails/>
         <AppList/>
+        <div className="loaderWrapper">
+<MyLoader/>
+
+      </div>
     </div>
   )
 }

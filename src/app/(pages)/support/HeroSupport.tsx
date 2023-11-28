@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './support.module.scss'
 import { usePathname } from "next/navigation";
 import Link from 'next/link';
+import MyLoader from '@/components/MyLoader/MyLoader';
 
 const HeroSupport = () => {
     const pathname = usePathname();
@@ -34,6 +35,10 @@ const HeroSupport = () => {
     
           </ul>
           </div>
+          <div className="loaderWrapper">
+<MyLoader/>
+
+      </div>
         </section>
       )
 }

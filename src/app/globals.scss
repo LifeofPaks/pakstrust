@@ -127,7 +127,10 @@ button {
     z-index: 10;
     animation: pulse 1s .1s infinite;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
   }
 }
 

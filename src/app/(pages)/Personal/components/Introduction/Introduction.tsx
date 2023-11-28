@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Introduction.module.scss";
 import Image from "next/image";
 import AppList from "../../../business/components/AppList/AppList";
+import MyLoader from "@/components/MyLoader/MyLoader";
 
 const Introduction = () => {
   return (
@@ -61,6 +62,10 @@ const Introduction = () => {
         </div>
       </div>
       <AppList />
+      <div className="loaderWrapper">
+<MyLoader/>
+
+      </div>
     </div>
   );
 };

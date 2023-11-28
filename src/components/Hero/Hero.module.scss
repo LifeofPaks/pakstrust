@@ -7,21 +7,58 @@
 
   p {
     color: #777777;
+    z-index: 10;
   }
 
   .container {
+    position: relative;
     padding-block: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: url("../../../public/d1.webp") no-repeat 350px 20px,
-      url("../../../public/d2.webp") no-repeat 350px 450px,
-      url("../../../public/d4.png") no-repeat 1100px 20px;
-    background-size: 65px, 45px, 150px;
-    position: relative;
+
+    .bgImage1{
+      position: absolute;
+      left: 24rem;
+      top: 1.2rem;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      background: url("../../../public/d1.webp") no-repeat;
+      background-size: 65px;
+      transition: .3s;
+
+    }
+
+    .bgImage2{
+      position: absolute;
+      left: 24rem;
+      top: 29rem;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      background:  url("../../../public/d2.webp") no-repeat ;
+      background-size: 45px;
+      transition: .3s;
+
+    }
+
+    .bgImage3{
+      position: absolute;
+      left: 65.5rem;
+      top: 1.2rem;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      background: url("../../../public/d4.png")  no-repeat;
+      background-size: 150px;
+      transition: .3s;
+
+    }
 
     .left {
       width: 50%;
+      z-index: 2;
 
       .text {
         text-transform: uppercase;

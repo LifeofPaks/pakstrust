@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./RegForm.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import MyLoader from "@/components/MyLoader/MyLoader";
 const RegForm = () => {
   return (
+    <>
     <div className={styles.regForm}>
       <div className={styles.heading}>
         <h1 className={styles.title}>Account Information</h1>
@@ -88,6 +90,11 @@ const RegForm = () => {
         </div>
       </form>
     </div>
+    <div className="loaderWrapper">
+<MyLoader/>
+
+      </div>
+    </>
   );
 };
 
