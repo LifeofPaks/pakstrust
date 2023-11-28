@@ -30,6 +30,10 @@
             align-items: center;
             justify-content: center;
 
+            &:not(:last-child){
+                border-right: 1px solid #ccc;
+            }
+
             h2{
                 font-size: 30px;
             }

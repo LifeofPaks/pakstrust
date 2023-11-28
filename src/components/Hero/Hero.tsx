@@ -7,7 +7,6 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { store } from "@/hooks/store";
 import Youtube from "../Youtube/Youtube";
-import Loader from "react-loaders";
 import ActiveUser from "../Floating/ActiveUser/ActiveUser";
 
 const Hero = () => {
@@ -94,7 +93,6 @@ const Hero = () => {
       </div>
       <Youtube />
 
-      <Loader active type="square-spin" />
     </div>
   );
 };

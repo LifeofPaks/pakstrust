@@ -1,3 +1,4 @@
+
 import React from "react";
 import styles from "./about.module.scss";
 import HeroAbout from "./HeroAbout";
@@ -24,6 +25,8 @@ const aboutUs = () => {
       <FunFacts/>
       <OurApp/>
       <ScrollTop />
+      
+   
     </div>
   );
 };

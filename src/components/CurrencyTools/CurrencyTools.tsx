@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import styles from "./CurrencyTools.module.scss";
 import { currencyToolsData } from "@/data/data";
@@ -5,10 +6,12 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import MyLoader from "../MyLoader/MyLoader";
 
 
 const CurrencyTools = () => {
   return (
+    <>
     <div className={styles.cTools}>
       <div className={styles.title}>
         <p className={styles.titleText}>POPULAR CURRENCY TOOLS</p>
@@ -20,8 +23,8 @@ const CurrencyTools = () => {
       <div className={styles.container}>
         <div className={styles.row}>
             {
-                currencyToolsData.map(data =>(
-                    <div className={styles.col} key={data.id}>
+              currencyToolsData.map(data =>(
+                <div className={styles.col} key={data.id}>
                     <div className={styles.conTitle}>
                       <div className={styles.iconWraps}>
                         <div className={styles.iconShadow}></div>
@@ -35,7 +38,7 @@ const CurrencyTools = () => {
                     <Link href='/login' className={styles.action}>{data.action} <FontAwesomeIcon className={styles.fIcon} icon={faAngleRight} /></Link>
                   </div>
                 ))
-            }
+              }
 
         <div className={styles.slideBtns}>
             <div className={styles.sLeft}></div>
@@ -44,6 +47,11 @@ const CurrencyTools = () => {
         </div>
       </div>
     </div>
+    <div className="loaderWrapper">
+<MyLoader/>
+
+      </div>
+              </>
   );
 };
 
