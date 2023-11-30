@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import styles from "./About.module.scss";
 import Image from "next/image";
 import Companies from "@/brands/Logos/companies/Companies";
@@ -6,14 +7,21 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { faAppStore } from "@fortawesome/free-brands-svg-icons";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+  
 
 const About = () => {
+
+  useEffect(() =>{
+    AOS.init({duration:2000})
+  }, [])
   return (
     <div className={styles.about}>
       <Companies />
 
       <div className={styles.container}>
-        <div className={styles.left}>
+        <div className={`${styles.left}`} data-aos="fade-right">
           <div className={`${styles.imgWrap} ${styles.smallImg}`}>
             <Image src="/am2.webp" alt="ab-img" width={350} height={350} />
             <div className={styles.cut}></div>
@@ -23,7 +31,7 @@ const About = () => {
             <div className={styles.cut}></div>
           </div>
         </div>
-        <div className={styles.right}>
+        <div className={`${styles.right}`} data-aos="fade-left">
           <p className={styles.lText}>ABOUT US</p>
           <h1 className={styles.xxlText}>We revolutionized Digital Banking</h1>
           <p className={styles.desc}>

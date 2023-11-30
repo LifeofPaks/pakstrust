@@ -16,7 +16,13 @@ const Blog = () => {
 
       <div className={styles.wrapper}>
         {blogData.map((data) => (
-          <Link href={data.link} target="_blank" className={styles.card}>
+          <Link
+            href={data.link}
+            target="_blank"
+            className={styles.card}
+            data-aos="fade-up"
+            data-aos-delay={data.delay}
+          >
             <Image src={data.image} alt="blog-img" width={450} height={300} />
             <div className={styles.content}>
               <div className={styles.row}>

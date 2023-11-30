@@ -115,36 +115,54 @@ export const benefitsData: BenefitsDataType[] = [
     id: 1,
     title: " Global Coverage",
     image: "/globe.png",
+    animation: 'slide-up',
+    delay :'100',
+    duration:"1000"
   },
 
   {
     id: 2,
     title: "Easy Transfer Method",
     image: "/moneybag.png",
+    animation: 'slide-up',
+    delay :'110',
+    duration:"1000"
   },
 
   {
     id: 3,
     title: "Global 24 / 7 Support",
     image: "/alert.png",
+    animation: 'slide-up',
+    delay :'120',
+    duration:"1000"
   },
 
   {
     id: 4,
     title: "Lowest Fee",
     image: "/circulate.png",
+    animation: 'slide-up',
+    delay :'130',
+    duration:"1000"
   },
 
   {
     id: 5,
     title: "Instant Processing",
     image: "/process.png",
+    animation: 'slide-up',
+    delay :'140',
+    duration:"1000"
   },
 
   {
     id: 6,
     title: "Bank Level Security",
     image: "/protect.png",
+    animation: 'slide-up',
+    delay :'150',
+    duration:"1000"
   },
 ];
 
@@ -253,7 +271,9 @@ export const blogData: BlogDataType[] = [
     image: '/bl1.jpeg',
     type: 'corporate',
     date: 'Oct 22, 2023',
-    link: 'https://manychat.com/blog/how-to-start-a-successful-business/?utm_source=google&utm_medium=search&utm_campaign=dynamic-search&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn8FapjHK96m-eSDps8Fg-v_CPEv5V30YAmUZ3oZI3MPlFxhDXlvfbBoCwK8QAvD_BwE'
+    link: 'https://manychat.com/blog/how-to-start-a-successful-business/?utm_source=google&utm_medium=search&utm_campaign=dynamic-search&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn8FapjHK96m-eSDps8Fg-v_CPEv5V30YAmUZ3oZI3MPlFxhDXlvfbBoCwK8QAvD_BwE',
+    animation: 'slide-up',
+    delay :'100',
   },
 
   {
@@ -262,7 +282,9 @@ export const blogData: BlogDataType[] = [
     image: '/bl2.jpeg',
     type: 'Consumer',
     date: 'Oct 15, 2023',
-    link: 'https://www.investopedia.com/articles/insights/122016/9-common-effects-inflation.asp'
+    link: 'https://www.investopedia.com/articles/insights/122016/9-common-effects-inflation.asp',
+    animation: 'slide-up',
+    delay :'200',
   },
   {
     id: 3,
@@ -270,7 +292,9 @@ export const blogData: BlogDataType[] = [
     image: '/bl3.jpeg',
     type: 'Finance',
     date: 'Sept 04, 2023',
-    link: 'https://grey.co/blog/best-currency-exchange-rates'
+    link: 'https://grey.co/blog/best-currency-exchange-rates',
+    animation: 'slide-up',
+    delay :'300',
   },
 
 ]

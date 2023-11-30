@@ -12,7 +12,7 @@ const ContactForm = () => {
         <input className={styles.input} type="text" placeholder="Name*" />
         <input className={styles.input} type="email" placeholder="Email*" />
         <input className={styles.input} type="text" placeholder="Phone*" />
-        <textarea placeholder="Message*" />
+        <textarea placeholder="Your Message..." />
 
         <div className={styles.terms}>
           <input type="checkbox" id="terms" />

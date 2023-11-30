@@ -7,11 +7,14 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { store } from "@/hooks/store";
 import Youtube from "../Youtube/Youtube";
-import ActiveUser from "../Floating/ActiveUser/ActiveUser";
+import ActiveUser from "../Floating/ActiveUser/ActiveUser"
+
+
+
+
 
 const Hero = () => {
   const { togglePlayVideo } = store();
-
   const [backgroundPosition, setBackgroundPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -25,6 +28,8 @@ const Hero = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+
 
   return (
     <div className={styles.hero}>
@@ -57,20 +62,20 @@ const Hero = () => {
         ></div>
 
         <div className={styles.left}>
-          <p className={styles.text}>SIMPLE, QUICK, SECURED</p>
+          <p className={`${styles.text} slideUp d1 `} >SIMPLE, QUICK, SECURED</p>
 
-          <h1 className={styles.title}>
+          <h1 className={`${styles.title} slideUp d2 `}>
             Transfer Money Across The World In Real time
           </h1>
 
-          <p className={styles.desc}>
+          <p className={`${styles.desc} slideUp d3 `}>
             Rivero Trust Bank transformed the digital banking industry using
             data and technology more than ten years ago. We are now one of the
             largest digital banking providers, dedicated to innovating,
             simplifying, and humanizing banking.
           </p>
 
-          <div className={styles.interact}>
+          <div className={`${styles.interact} slideUp d4 `}>
             <Link href="/login">
               <button className="primaryBtn">
                 online banking
@@ -86,7 +91,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className={styles.digSupport}>
+          <div className={`${styles.digSupport} slideUp d5 `}>
             <div className={styles.imgContainer}>
               <Image
                 src="/p1.jpeg"

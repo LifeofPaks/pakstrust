@@ -1,8 +1,15 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import styles from "./ChooseUs.module.scss";
 import Image from "next/image";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const ChooseUs = () => {
+  useEffect(() =>{
+    AOS.init({duration:2000})
+  }, [])
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
@@ -14,7 +21,7 @@ const ChooseUs = () => {
           digital banking providers, dedicated to innovating, simplifying, and
           humanizing banking.
         </p>
-        <div className={styles.col}>
+        <div className={styles.col} data-aos="fade-up" data-aos-delay="500">
           <div className={styles.row}>
             <div className={styles.iconWrap}>
               <Image src="/cm.png" alt="cm-img" width={30} height={30} />
@@ -37,7 +44,7 @@ const ChooseUs = () => {
           </div>
         </div>
       </div>
-      <div className={styles.right}>
+      <div className={styles.right} data-aos="fade-up">
         <div className={styles.wraps}>
           <div className={styles.col}>
             <div className={styles.imgWrap}>

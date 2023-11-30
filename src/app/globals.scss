@@ -165,3 +165,32 @@ button {
   color: #555;
   line-height: 25px;
 }
+
+// PAGE ANIMATIONS
+
+.slideUp{
+  animation: fadeInUp 2s forwards;
+  opacity: 0;
+}
+
+// ANIMATION DELAY
+.d1{
+  animation-delay: 2s;
+}
+
+.d2{
+  animation-delay: 2.1s;
+}
+
+.d3{
+  animation-delay: 2.2s;
+}
+
+.d4{
+  animation-delay: 2.3s;
+}
+
+.d5{
+  animation-delay: 2.4s;
+}
+

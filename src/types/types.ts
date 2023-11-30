@@ -21,8 +21,13 @@ export type ExchangeDataType = {
 export type BenefitsDataType ={
     id: number,
     title: string,
-    image: string
+    image: string,
+    animation?: string,
+    delay?: string
+    duration?: string
 }
+
+
 
 export type CurrecnyProfileDataType = {
     id:  number,
@@ -45,6 +50,8 @@ export type reviewDataType ={
     type: string
     date: string
     link : string
+    animation: string
+    delay: string
   }
 
   export type SupportDataType = {
