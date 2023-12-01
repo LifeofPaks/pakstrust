@@ -40,6 +40,7 @@ export const currencyToolsData: CurrencyToolType[] = [
     action: "get started",
     icon: "/user.png",
   },
+
 ];
 
 export const exchangeData: ExchangeDataType[] = [

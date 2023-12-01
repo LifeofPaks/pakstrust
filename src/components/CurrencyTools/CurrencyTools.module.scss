@@ -1,7 +1,7 @@
 @import "../../styles/Responsive.scss";
 
 .cTools {
-  padding: 5rem 6%;
+  padding: 7rem 6%;
 
   .title {
     width: 100%;
@@ -20,128 +20,6 @@
       color: blue;
       letter-spacing: 3px;
       margin-bottom: 1.5rem;
-    }
-  }
-
-  .container {
-    margin-top: 3rem;
-    position: relative;
-
-    p {
-      color: #777;
-      line-height: 25px;
-      transition: 0.3s;
-      font-size: 15px;
-    }
-
-    .row {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow-x: scroll;
-      padding: 2rem 1rem;
-      width: 90vw;
-      margin: 0 auto;
-      gap: 1rem;
-      overscroll-behavior-inline: contain;
-
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      .col {
-        padding: 1.5rem;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        transition: 0.3s;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        width: 420px;
-
-        &:hover {
-          color: #fff;
-
-          p {
-            color: #fff;
-          }
-
-
-          img {
-            filter: brightness(0) invert(1);
-          }
-
-          &::before {
-            width: 100%;
-            opacity: 1;
-          }
-          .action {
-            color: #fff;
-          }
-        }
-
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          width: 0;
-          background: blue;
-          z-index: -1;
-          transition: 0.3s;
-          opacity: 0;
-        }
-
-        .conTitle {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          margin-bottom: 1rem;
-
-          .iconWraps {
-            position: relative;
-
-            .iconShadow {
-              position: absolute;
-              right: -1px;
-              bottom: 0;
-              width: 35px;
-              height: 35px;
-              border-radius: 50%;
-              background: rgba(172, 236, 199, 0.355);
-              z-index: -1;
-            }
-
-            img {
-              transition: 0.3s;
-            }
-          }
-
-          .xl {
-            font-size: 20px;
-          }
-        }
-
-        .action {
-          color: blue;
-          text-transform: uppercase;
-          margin-top: 1rem;
-          font-size: 13px;
-          letter-spacing: 2px;
-          display: flex;
-          align-items: center;
-          gap: 0.6rem;
-          transition: 0.3s;
-
-          .fIcon {
-            transition: 1s;
-          }
-        }
-      }
-    }
-
-    .slideBtns {
     }
   }
 }
