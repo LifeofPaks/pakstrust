@@ -226,7 +226,7 @@ export const currecnyProfileData: CurrecnyProfileDataType[] = [
 export const reviewData: reviewDataType[] = [
   {
     id: 1,
-    avatar: "/aw3.jpeg",
+    avatar: "/z2.jpeg",
     name: "Alex Cruise",
     office: "CEO, IBAC",
     desc: "I opened a savings and checking account at Rivero Trust Bank in Oregon, The Teller who helped me was a pleasure to work with, she made my day a pleasant day. Thank you for the terrific customer service.",
@@ -234,7 +234,7 @@ export const reviewData: reviewDataType[] = [
 
   {
     id: 2,
-    avatar: "/avm1.jpeg",
+    avatar: "/z1.jpeg",
     name: "Tom Haris",
     office: "Engineer, Olleo",
     desc: " Rivero Trust Bank has an awesome team and a dedicated staff. I am very impressed by their vision, hard work, outstanding performance, and wonferful team-mates. Their reputation is well-earned.",
@@ -242,7 +242,7 @@ export const reviewData: reviewDataType[] = [
 
   {
     id: 4,
-    avatar: "/aw2.jpeg",
+    avatar: "/z3.webp",
     name: "Claire Santos",
     office: "Director, BAT",
     desc: "Have been using Rivero Trust Bank  sense I was 16 years old. Wonderful staff and fast technology with them. If I had a problem, they fix it right away. I’m loving (BN) and I plan on sticking with them for life. Good Job guys.👍🏼 ",
@@ -250,15 +250,15 @@ export const reviewData: reviewDataType[] = [
 
   {
     id: 5,
-    avatar: "/avm2.jpeg",
-    name: "Matt Donovan",
+    avatar: "/z5.webp",
+    name: "Tracy Donovan",
     office: "MD, Itec",
     desc: "The sweetest, most accommodating, professional, proficient bank in these United States. I have never encountered a bank that totally helps as well as understands their customers. The manager at Rivero Trust Bank is ABSOLUTELY the best ever.",
   },
 
   {
     id: 6,
-    avatar: "/avm3.jpeg",
+    avatar: "/z4.jpeg",
     name: "Harry Jackson",
     office: "Enterprenuer",
     desc: ". It’s a rare thing to discover a bank that genuinely cares about the people it serves and Rivero Trust Bank  is that kind of bank. They’ve always shown me kindness, respect, and a friendly smile. I can’t recommend them enough for all your banking needs – you won’t be disappointed!",

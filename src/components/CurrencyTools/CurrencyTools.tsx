@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./CurrencyTools.module.scss";
 import { currencyToolsData } from "@/data/data";
 import Image from "next/image";
