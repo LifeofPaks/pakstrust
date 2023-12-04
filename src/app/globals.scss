@@ -93,6 +93,8 @@ button {
   }
 }
 
+// CUSTOM LOADER================================
+
 .loaderWrapper {
   position: fixed;
   left: 0;
@@ -117,8 +119,14 @@ button {
   justify-content: center;
   animation: fadeOut 1s 2s;
   animation-fill-mode: forwards;
+
   img {
     animation: spin 3s 0.1s linear;
+
+  @include Mobile{
+      height: 65px;
+      width: 45px;
+  }
   }
 
   p {
@@ -130,6 +138,11 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
+    
+    @include Mobile{
+      margin-top: -.5rem;
+      font-size: 7px;
+  }
   }
 }
 

@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import styles from "./About.module.scss";
 import Image from "next/image";
-import Companies from "@/brands/Logos/companies/Companies";
+import Companies from "@/brands/companies/Companies";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faRocket } from "@fortawesome/free-solid-svg-icons";

@@ -1,139 +1,157 @@
-.footer{
-    padding: 5rem 6%;
-    padding-bottom: 2rem;
-    background: #000;
-    color: #fff;
+@import "../../styles/Responsive.scss";
 
-    .row{
+.footer {
+  padding: 5rem 6%;
+  padding-bottom: 2rem;
+  background: #000;
+  color: #fff;
+
+  .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include Tablet {
+      flex-wrap: wrap;
+    }
+
+    @include Mobile {
+      flex-direction: column;
+    }
+
+    .col {
+      p {
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      .desc {
+        margin-block: 1rem;
+        width: 290px;
+        margin-bottom: 2rem;
+      }
+
+      .icons {
         display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 2rem;
+        align-items: center;
+        gap: 1rem;
 
-        .col{
+        .icon {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: #fff;
+          display: grid;
+          place-content: center;
+          cursor: pointer;
+          transition: 0.3s;
 
-            p{
-                font-size: 14px;
-                line-height: 25px;
+          img {
+            transition: 0.3s;
+          }
+
+          &:hover {
+            background: blue;
+            transform: translateY(-3px);
+            img {
+              filter: brightness(0) invert(1);
             }
-
-            .desc{
-                margin-block: 1rem;
-                width: 290px;
-                margin-bottom: 2rem;
-            }
-
-            .icons{
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-
-
-                .icon{
-                    width: 35px;
-                    height: 35px;
-                    border-radius: 50%;
-                    background: #fff;
-                    display: grid;
-                    place-content: center;
-                    cursor: pointer;
-                    transition: .3s;
-
-                    img{
-                        transition: .3s;
-                    }
-
-                    &:hover{
-                        background: blue;
-                        transform: translateY(-3px);
-                        img{
-                            filter: brightness(0) invert(1); 
-                        }
-                    }
-                }
-            }
-
-            .cTitle{
-                font-size: 20px;
-                margin-bottom: 1rem;
-            }
-
-            .hr{
-                position: relative;
-                width: 100px;
-                background: #777;
-                height: 2px;
-                border-radius: 50px;
-                margin-bottom: 2rem;
-                overflow: hidden;
-
-                &::before{
-                    position: absolute;
-                    content: '';
-                    left: 0;
-                    top: 0;
-                    width: 30px;
-                    height: 2px;
-                    background: blue;
-
-                }
-            }
-
-            ul{
-                li{
-                    margin-bottom: 1.1rem;
-
-                    a{
-                        color: #ccc;
-                        font-size: 14px;
-                        transition: .3s;
-
-                        &:hover{
-                            color: rgb(61, 61, 243);
-                            text-decoration: underline;
-                        }
-                    }
-
-                    .contactWraps{
-                        display: flex;
-                        align-items: flex-start;
-                        gap: 1rem;
-
-                        .infoWraps{
-                            margin-top: -.3rem;
-
-                            &:hover{
-
-                                .fText{
-                                    color: rgb(61, 61, 243);
-                                }
-                            }
-                            
-                            .fText{
-                                transition: .3s;
-                                width: 250px;
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
-    }
+      }
 
-    .cp{
-        width: 100%;
-        border-top: .5px solid #cccccc7d;
-        padding-top: 2rem;
-        margin-top: 4rem;
-        text-align: center;
+      .cTitle {
+        font-size: 20px;
+        margin-bottom: 1rem;
 
-        .cpText{
-            font-size: 13px;
-
-            a{
-                color: blue;
-                font-size: 14px;
-            }
+        @include Mobile {
+          font-size: 16px;
         }
+      }
+
+      .hr {
+        position: relative;
+        width: 100px;
+        background: #777;
+        height: 2px;
+        border-radius: 50px;
+        margin-bottom: 2rem;
+        overflow: hidden;
+
+        &::before {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 0;
+          width: 30px;
+          height: 2px;
+          background: blue;
+        }
+      }
+
+      ul {
+        li {
+          margin-bottom: 1.1rem;
+
+          a {
+            color: #ccc;
+            font-size: 14px;
+            transition: 0.3s;
+
+            &:hover {
+              color: rgb(61, 61, 243);
+              text-decoration: underline;
+            }
+          }
+
+          .contactWraps {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .infoWraps {
+              margin-top: -0.3rem;
+
+              &:hover {
+                .fText {
+                  color: rgb(61, 61, 243);
+                }
+              }
+
+              .fText {
+                transition: 0.3s;
+                width: 250px;
+              }
+            }
+          }
+        }
+      }
     }
+  }
+
+  .cp {
+    width: 100%;
+    border-top: 0.5px solid #cccccc7d;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+
+    .cpText {
+      font-size: 13px;
+
+      @include Mobile {
+        font-size: 11px;
+      }
+
+      a {
+        color: blue;
+        font-size: 14px;
+
+        @include Mobile {
+            font-size: 12px;
+          }
+      }
+    }
+  }
 }

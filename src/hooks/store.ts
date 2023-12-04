@@ -8,13 +8,16 @@ type StoreType = {
   resetState: () => void;
   inverse : boolean;
   toggleInverse: () => void;
+  showMenu : boolean
+  toggleMenu: () => void;
 };
 
 const initialState = {
   showCTA: false,
   playVideo: false,
   imageIndex : 0,
-  inverse : false
+  inverse : false,
+  showMenu: false,
 };
 
 export const store = create<StoreType>((set) => ({
@@ -29,6 +32,10 @@ export const store = create<StoreType>((set) => ({
 
   toggleInverse: () => {
     set((state) => ({ inverse: !state.inverse }));
+  },
+
+  toggleMenu: () => {
+    set((state) => ({ showMenu: !state.showMenu }));
   },
 
   resetState: () => set(initialState),

@@ -1,24 +1,66 @@
-.logo{
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding-inline: 2rem;
-    width: fit-content;
+@import "../../styles/Responsive.scss";
 
-    .text{
-        text-transform: uppercase;
-        color: #05004e;
+.logo {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding-inline: 2rem;
+  width: fit-content;
 
-        h1{
-            font-weight: 900;
-            font-size: 30px;
-        }
+  @include Tablet {
+    padding-inline: 1rem;
+    padding-right: 1.5rem;
+  }
+  
+  @include Mobile {
+    padding-inline: 0.3rem;
+    padding-right: .8rem;
+  }
 
-        h2{
-            font-size: 13px;
-            color: red;
-            font-weight: 700;
-        }
 
+  img{
+
+
+    @include Tablet{
+        height: 80px;
+        width: 60px;
     }
+
+    @include Mobile{
+      height: 60px;
+      width: 40px;
+  }
+  }
+
+  .text {
+    text-transform: uppercase;
+    color: #05004e;
+
+    h1 {
+      font-weight: 900;
+      font-size: 30px;
+
+      @include Tablet {
+        font-size: 24px;
+      }
+
+      @include Mobile {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      font-size: 13px;
+      color: red;
+      font-weight: 700;
+
+      @include Tablet {
+        font-size: 10px;
+      }
+
+      @include Mobile {
+        font-size: 8px;
+      }
+    }
+  }
 }

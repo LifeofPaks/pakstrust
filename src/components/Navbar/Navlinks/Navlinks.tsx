@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Navlinks.module.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -11,12 +11,12 @@ import PopupCta from "../PopupCta/PopupCta";
 
 const Navlinks = () => {
   const pathname = usePathname();
-  const {toggleShowCTA } = store();
+  const {toggleShowCTA, toggleMenu, showMenu } = store();
 
   return (
-    <>
+    <div className={`${styles.container} ${showMenu ? styles.show : ''}`}>
       <ul className={styles.navlinks}>
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/"
             className={`${styles.link} ${
@@ -26,7 +26,7 @@ const Navlinks = () => {
             Home
           </Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/business"
             className={`${styles.link} ${
@@ -36,7 +36,7 @@ const Navlinks = () => {
             Business
           </Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/Personal"
             className={`${styles.link} ${
@@ -46,7 +46,7 @@ const Navlinks = () => {
             Personal
           </Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/creditCard"
             className={`${styles.link} ${
@@ -56,7 +56,7 @@ const Navlinks = () => {
             Credit Cards
           </Link>
         </li>
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/loans"
             className={`${styles.link} ${
@@ -67,7 +67,7 @@ const Navlinks = () => {
           </Link>
         </li>
 
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/aboutUs"
             className={`${styles.link} ${
@@ -78,7 +78,7 @@ const Navlinks = () => {
           </Link>
         </li>
 
-        <li>
+        <li  onClick={toggleMenu} >
           <Link
             href="/support"
             className={`${styles.link} ${
@@ -97,7 +97,7 @@ const Navlinks = () => {
           <PopupCta />
         </li>
 
-        <li>
+        <li onClick={toggleMenu} >
           <Link href="/login">
             <button className="primaryBtn">
               online banking
@@ -105,9 +105,15 @@ const Navlinks = () => {
             </button>
           </Link>
         </li>
+
+        <div onClick={toggleMenu} className={styles.close}>
+        <Image src='/closeMenu.png' width={20} height={20} alt ='clsoeMenu'/>
+      </div>
       </ul>
-    </>
+      
+    </div>
   );
 };
+
 
 export default Navlinks;

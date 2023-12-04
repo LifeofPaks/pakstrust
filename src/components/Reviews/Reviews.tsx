@@ -62,7 +62,7 @@ const Reviews = () => {
         <div className='reviewCarousel'>
         <Slider {...settings}>
           {reviewData.map((data) => (
-            <span className='card'>
+            <span className='card' key={data.id}>
               <span className='row'>
                 <span className='left'>
                   <Image src={data.avatar} alt="av" width={70} height={70} />
