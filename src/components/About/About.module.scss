@@ -4,6 +4,10 @@
   padding: 5rem 6%;
   background: #fff;
 
+  @include Tablet{
+    padding: 2rem 2%;
+  }
+
   .container {
     display: flex;
     align-items: center;

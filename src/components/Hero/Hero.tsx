@@ -7,11 +7,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { store } from "@/hooks/store";
 import Youtube from "../Youtube/Youtube";
-import ActiveUser from "../Floating/ActiveUser/ActiveUser"
-
-
-
-
+import ActiveUser from "../Floating/ActiveUser/ActiveUser";
 
 const Hero = () => {
   const { togglePlayVideo } = store();
@@ -28,8 +24,6 @@ const Hero = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-
-
 
   return (
     <div className={styles.hero}>
@@ -62,7 +56,7 @@ const Hero = () => {
         ></div>
 
         <div className={styles.left}>
-          <p className={`${styles.text} slideUp d1 `} >SIMPLE, QUICK, SECURED</p>
+          <p className={`${styles.text} slideUp d1 `}>SIMPLE, QUICK, SECURED</p>
 
           <h1 className={`${styles.title} slideUp d2 `}>
             Transfer Money Across The World In Real time

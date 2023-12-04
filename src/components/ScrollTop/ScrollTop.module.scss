@@ -1,6 +1,13 @@
 @import "../../styles/Responsive.scss";
 
 .container {
+  box-shadow:  0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 45px;
+  border-radius: 62% 38% 46% 54%/60% 63% 37% 40%;
+  background: blue;
+  display: grid;
+  place-content: center;
   cursor: pointer;
   position: fixed;
   z-index: 10;
@@ -11,38 +18,31 @@
   visibility: hidden;
   opacity: 0;
 
+  @include Tablet{
+    right: 1rem;
+  }
+  
+  @include Mobile{
+    right: .7rem;
+    width: 40px;
+    height: 35px;
+}
+
+img{
+
+    @include Mobile{
+        width: 10px;
+        height: 10px;
+    }
+
+}
+
   &.show {
     visibility: visible;
     opacity: 1;
     bottom: 3rem;
   }
 
-  .imgWraps {
-    position: relative;
-    width: 50px;
-    height: 50px;
-
-    img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-
-      &.arrow {
-        z-index: 1;
-      }
-    }
-
-    .shadow {
-      position: absolute;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background: #0000001e;
-      bottom: -1px;
-      right: 5px;
-    }
-  }
 }
 
 @keyframes bounce {

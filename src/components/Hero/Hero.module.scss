@@ -8,6 +8,10 @@
   p {
     color: #777777;
     z-index: 10;
+
+    @include Mobile {
+      font-size: 14px;
+    }
   }
 
   .container {
@@ -17,7 +21,16 @@
     align-items: center;
     justify-content: space-between;
 
-    .bgImage1{
+    @include Tablet {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    @include Mobile {
+      padding-top: 18%;
+    }
+
+    .bgImage1 {
       position: absolute;
       left: 24rem;
       top: 1.2rem;
@@ -26,39 +39,68 @@
       height: 100vh;
       background: url("../../../public/d1.webp") no-repeat;
       background-size: 65px;
-      transition: .3s;
+      transition: 0.3s;
 
+      @include Tablet {
+        left: 10rem;
+        top: 2.5rem;
+      }
+
+      @include Mobile {
+        top: 4.5rem;
+      }
     }
 
-    .bgImage2{
+    .bgImage2 {
       position: absolute;
       left: 24rem;
       top: 29rem;
       right: 0;
       bottom: 0;
       height: 100vh;
-      background:  url("../../../public/d2.webp") no-repeat ;
+      background: url("../../../public/d2.webp") no-repeat;
       background-size: 45px;
-      transition: .3s;
+      transition: 0.3s;
 
+      @include Tablet {
+        left: 15rem;
+        top: 60rem;
+      }
+
+      @include Mobile {
+        left: 16rem;
+        top: 17.5rem;
+      }
     }
 
-    .bgImage3{
+    .bgImage3 {
       position: absolute;
       left: 65.5rem;
       top: 1.2rem;
       right: 0;
       bottom: 0;
       height: 100vh;
-      background: url("../../../public/d4.png")  no-repeat;
+      background: url("../../../public/d4.png") no-repeat;
       background-size: 150px;
-      transition: .3s;
+      transition: 0.3s;
 
+      @include Tablet {
+        left: 22rem;
+        top: 7.5rem;
+      }
+
+      @include Mobile {
+        display: none;
+      }
     }
 
     .left {
       width: 50%;
       z-index: 2;
+
+      @include Tablet {
+        width: 100%;
+      }
 
       .text {
         text-transform: uppercase;
@@ -67,11 +109,28 @@
         color: blue;
         letter-spacing: 3px;
         margin-bottom: 1.5rem;
+
+        @include Tablet {
+          font-size: 16px;
+          margin-bottom: 1rem;
+        }
+
+        @include Mobile {
+          font-size: 14px;
+        }
       }
 
       .title {
         font-size: 3.4rem;
         margin-bottom: 2rem;
+
+        @include Tablet {
+          font-size: 2.8rem;
+        }
+
+        @include Mobile {
+          font-size: 2rem;
+        }
       }
 
       .desc {
@@ -84,6 +143,10 @@
         align-items: center;
         gap: 1rem;
         margin-bottom: 3rem;
+
+        @include Tablet {
+          margin-bottom: 1rem;
+        }
 
         .icon {
           margin-left: 0.7rem;
@@ -102,10 +165,29 @@
 
         .imgContainer {
           width: 32%;
+
+          @include Tablet {
+            width: 28%;
+          }
+
+          @include Mobile {
+            width: 40%;
+          }
+
           img {
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #fff;
+
+            @include Tablet {
+              width: 50px;
+              height: 50px;
+            }
+
+            @include Mobile {
+              width: 40px;
+              height: 40px;
+            }
 
             &.img2 {
               margin-left: -0.6rem;
@@ -119,6 +201,10 @@
 
         .support {
           width: 200px;
+
+          @include Tablet {
+            width: 100%;
+          }
 
           .sText {
             line-height: 25px;
@@ -137,6 +223,11 @@
       align-items: center;
       gap: 1.5rem;
 
+      @include Mobile {
+        gap: 1rem;
+        width: 100%;
+      }
+
       .imgWrap {
         position: relative;
         overflow: hidden;
@@ -147,6 +238,14 @@
 
         &.low {
           transform: translateY(25px);
+        }
+
+        img{
+
+          @include Mobile {
+            width: 200px;
+            height: 300px;
+          }
         }
 
         .cut {

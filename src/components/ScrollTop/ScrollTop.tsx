@@ -28,16 +28,6 @@ const ScrollTop = () => {
           width={14}
           height={14}
         />
-
-        <div className={styles.shadow}></div>
-
-        <Image
-          className={styles.shape}
-          src="/drop.png"
-          alt="shape"
-          width={59}
-          height={59}
-        />
       </div>
     </div>
   );
