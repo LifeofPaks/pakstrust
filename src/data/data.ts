@@ -70,7 +70,7 @@ export const exchangeData: ExchangeDataType[] = [
     id: 3,
     flag: "/britain.png",
     title: "British Pound",
-    amount: "230.88.54",
+    amount: "230.54",
     change: "-0.12%",
     chart: "/r1.svg",
     send: "Send",
@@ -81,7 +81,7 @@ export const exchangeData: ExchangeDataType[] = [
     id: 4,
     flag: "/nz.png",
     title: "Newzland Dollar",
-    amount: "177.09.54",
+    amount: "177.09",
     change: "-0.27 %",
     chart: "/r2.svg",
     send: "Send",
@@ -261,7 +261,7 @@ export const reviewData: reviewDataType[] = [
     avatar: "/z4.jpeg",
     name: "Harry Jackson",
     office: "Enterprenuer",
-    desc: ". It’s a rare thing to discover a bank that genuinely cares about the people it serves and Rivero Trust Bank  is that kind of bank. They’ve always shown me kindness, respect, and a friendly smile. I can’t recommend them enough for all your banking needs – you won’t be disappointed!",
+    desc: " It’s a rare thing to discover a bank that genuinely cares about the people it serves and Rivero Trust Bank  is that kind of bank. They’ve always shown me kindness, respect, and a friendly smile. I can’t recommend them enough for all your banking needs – you won’t be disappointed!",
   },
 ];
 

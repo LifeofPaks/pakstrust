@@ -28,7 +28,7 @@ const Reviews = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -38,7 +38,7 @@ const Reviews = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 475,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

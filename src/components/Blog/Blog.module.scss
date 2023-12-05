@@ -3,34 +3,59 @@
 .container {
   padding: 5rem 6%;
 
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
+
   .title {
     width: 100%;
     text-align: center;
     margin-bottom: 5rem;
 
+    @include Tablet {
+      margin-bottom: 3rem;
+    }
+
     .xlText {
       width: 600px;
       margin-inline: auto;
       margin-bottom: 2rem;
+
+      @include Mobile {
+        width: 100%;
+        font-size: 24px;
+      }
     }
   }
 
   .wrapper {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding-bottom: 4rem;
 
+    @include Tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include Mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     .card {
-      width: 450px;
-      height: 480px;
+      width: 400px;
+      height: 430px;
       position: relative;
       background: #fff;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
       padding-bottom: 1rem;
-      transition: .3s;
+      transition: 0.3s;
+
+      @include Tablet {
+        width: 100%;
+      }
 
       &:hover {
         box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
@@ -77,6 +102,10 @@
         .blogTitle {
           font-size: 22px;
           transition: 0.5s;
+
+          @include Mobile {
+            font-size: 18px;
+          }
         }
       }
 

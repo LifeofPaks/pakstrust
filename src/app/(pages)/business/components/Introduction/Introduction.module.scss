@@ -1,36 +1,57 @@
-@import '../../../../../styles/Responsive.scss';
+@import "../../../../../styles/Responsive.scss";
 
-.container{
-    padding: 6rem 5%;
-    background: #fff;
+.container {
+  padding: 6rem 5%;
+  background: #fff;
 
-    .title{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 3rem;
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .desc {
+    p {
+      color: #555;
+      line-height: 25px;
+
+      @include Mobile {
+        font-size: 14px;
+      }
     }
 
-    .desc{
+    h2 {
+      font-size: 28px;
+      margin-bottom: 1rem;
 
-        p{
-            color: #555;
-            line-height: 25px;
-        }
-
-        h2{
-            font-size: 28px;
-            margin-bottom: 1rem;
-        }
-
-        .details{
-            margin-top: 1.5rem;
-
-            .item{
-                display: flex;
-                align-items: center;
-                gap: .7rem;
-                margin-bottom: 1rem;
-            }
-        }
+      @include Mobile {
+        font-size: 20px;
+      }
     }
+
+    .details {
+      margin-top: 1.5rem;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 1rem;
+
+        @include Mobile {
+          align-items: flex-start;
+        }
+
+        .text {
+          @include Mobile {
+            margin-top: -0.3rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -7,6 +7,8 @@ const OurApp = () => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+
+        <div className={styles.bounce}></div>
         <Image
           src="/app-screen.png"
           width={480}
@@ -28,7 +30,7 @@ const OurApp = () => {
             <Image
               src="/play-store.png"
               width={200}
-              height={70}
+              height={75}
               alt="app-screen"
             />
           </Link>
@@ -36,7 +38,7 @@ const OurApp = () => {
             <Image
               src="/app-store.png"
               width={200}
-              height={70}
+              height={75}
               alt="app-screen"
             />
           </Link>

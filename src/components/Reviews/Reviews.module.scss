@@ -4,6 +4,10 @@
   padding: 5rem 6%;
   background: #fff;
 
+  @include Mobile {
+    padding: 3rem 1rem;
+  }
+
   .title {
     width: 100%;
     text-align: center;
@@ -12,6 +16,10 @@
       width: 600px;
       margin-inline: auto;
       margin-bottom: 2rem;
+
+      @include Mobile {
+        width: 100%;
+      }
     }
   }
 

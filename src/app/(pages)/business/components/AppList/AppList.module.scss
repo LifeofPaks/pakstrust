@@ -1,78 +1,87 @@
-@import '../../../../../styles/Responsive.scss';
+@import "../../../../../styles/Responsive.scss";
 
-.container{
-    border-top: 1px solid #ccc;
-    padding-top: 1rem;
-    margin-top: 3rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.container {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 
-    .card{
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-        height: 130px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        padding-left: 2rem;
-        border-radius: 10px;
-        transition: 0.3s;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
+  @include Tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-        &:hover {
-            color: #fff;
-  
-            p {
-              color: #fff;
-            }
-  
-            img {
-              filter: brightness(0) invert(1);
-            }
-  
-            &::before {
-              width: 100%;
-              opacity: 1;
-            }
-          }
+  @include Mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 0;
-            background: blue;
-            z-index: -1;
-            transition: 0.3s;
-            opacity: 0;
-          }
 
-          .iconWraps {
-            position: relative;
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 130px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 2rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 
-            .iconShadow {
-              position: absolute;
-              right: -1px;
-              bottom: 0;
-              width: 35px;
-              height: 35px;
-              border-radius: 50%;
-              background: rgba(172, 236, 199, 0.355);
-              z-index: -1;
-            }
+    &:hover {
+      color: #fff;
 
-            img {
-              transition: 0.3s;
-            }
-          }
+      p {
+        color: #fff;
+      }
 
-        .xl{
-            font-size: 18px;
-        }
+      img {
+        filter: brightness(0) invert(1);
+      }
+
+      &::before {
+        width: 100%;
+        opacity: 1;
+      }
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background: blue;
+      z-index: -1;
+      transition: 0.3s;
+      opacity: 0;
+    }
+
+    .iconWraps {
+      position: relative;
+
+      .iconShadow {
+        position: absolute;
+        right: -1px;
+        bottom: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(172, 236, 199, 0.355);
+        z-index: -1;
+      }
+
+      img {
+        transition: 0.3s;
+      }
+    }
+
+    .xl {
+      font-size: 18px;
+    }
+  }
 }

@@ -8,7 +8,6 @@ import { store } from "@/hooks/store";
 const LiveExchange = () => {
   const { inverse, toggleInverse } = store();
 
-
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -19,23 +18,24 @@ const LiveExchange = () => {
         </h1>
       </div>
 
-      <div className={`${styles.table} ${inverse ? styles.invert : ''}`}>
-        <ul className={`${styles.tHead}  ${inverse ? styles.invert : ''}`}>
-          <li className={styles.toggle}>
+      <div className={`${styles.table} ${inverse ? styles.invert : ""}`}>
+        <ul className={`${styles.tHead}  ${inverse ? styles.invert : ""}`}>
+          <li className={`${styles.toggle} ${styles.hide}`}>
             Inverse
             <div
               onClick={toggleInverse}
               className={`${styles.toggler} ${inverse ? styles.tr : ""}`}
             >
-              <div className={`${styles.ball} ${inverse ? styles.invert : ''}`}></div>
+              <div
+                className={`${styles.ball} ${inverse ? styles.invert : ""}`}
+              ></div>
             </div>
           </li>
           <li>Amount</li>
           <li>Change(14h)</li>
-          <li>Chart(14h)</li>
-          <li className={styles.edit}>
+          <li className={styles.hide}>Chart(14h)</li>
+          <li className={`${styles.edit} ${styles.hide}`}>
             <button>
-              {" "}
               <Image src="/edit.png" alt="edit" width={20} height={20} /> Edit
             </button>
           </li>
@@ -67,7 +67,6 @@ const LiveExchange = () => {
               </div>
               <div className={styles.col}>
                 <button className={styles.btn}>
-                  {" "}
                   <Image src="/send.png" alt="send" width={20} height={20} />
                   {data.send}
                 </button>

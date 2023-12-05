@@ -1,85 +1,108 @@
-@import '../../styles/Responsive.scss';
+@import "../../styles/Responsive.scss";
 
-.container{
-    padding: 5rem 6%;
+.container {
+  padding: 5rem 6%;
 
-    .title{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 5rem;
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @include Mobile {
+      margin-bottom: 3rem;
     }
 
-    .content{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+    .xlText {
 
-        .card{
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-            height: 130px;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-            padding-left: 2rem;
-            border-radius: 10px;
-            transition: 0.3s;
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
+      @include Mobile {
+        font-size: 24px;
+      }
+    }
+  }
 
-            &:hover {
-                color: #fff;
-      
-                p {
-                  color: #fff;
-                }
-      
-                img {
-                  filter: brightness(0) invert(1);
-                }
-      
-                &::before {
-                  width: 100%;
-                  opacity: 1;
-                }
-              }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 
-              &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 0;
-                background: blue;
-                z-index: -1;
-                transition: 0.3s;
-                opacity: 0;
-              }
+    @include Tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-              .iconWraps {
-                position: relative;
-    
-                .iconShadow {
-                  position: absolute;
-                  right: -1px;
-                  bottom: 0;
-                  width: 35px;
-                  height: 35px;
-                  border-radius: 50%;
-                  background: rgba(172, 236, 199, 0.355);
-                  z-index: -1;
-                }
-    
-                img {
-                  transition: 0.3s;
-                }
-              }
+    @include Mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
-            .xl{
-                font-size: 18px;
-            }
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      height: 130px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      padding-left: 2rem;
+      border-radius: 10px;
+      transition: 0.3s;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+
+      &:hover {
+        color: #fff;
+
+        p {
+          color: #fff;
         }
+
+        img {
+          filter: brightness(0) invert(1);
+        }
+
+        &::before {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        background: blue;
+        z-index: -1;
+        transition: 0.3s;
+        opacity: 0;
+      }
+
+      .iconWraps {
+        position: relative;
+
+        .iconShadow {
+          position: absolute;
+          right: -1px;
+          bottom: 0;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: rgba(172, 236, 199, 0.355);
+          z-index: -1;
+        }
+
+        img {
+          transition: 0.3s;
+        }
+      }
+
+      .xl {
+        font-size: 18px;
+      }
     }
+  }
 }

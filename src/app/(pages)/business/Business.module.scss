@@ -1,4 +1,4 @@
-@import '../../../styles/Responsive.scss';
+@import "../../../styles/Responsive.scss";
 
 .container {
   margin-top: 6rem;
@@ -13,49 +13,64 @@
     background-image: linear-gradient(
         to right,
         rgba(30, 30, 121, 0.706),
-        rgb(2, 2, 2),
+        rgb(2, 2, 2)
       ),
       url("https://assets-global.website-files.com/64df87becc50773e856e8758/653fe0da0838666c37699307_pros-cons-debit-cards-blog.jpeg");
     background-size: cover;
     background-position: center;
 
-    h1{
-        font-size: 40px;
-        margin-bottom: 2rem;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 2rem;
+
+    
+      @include Mobile {
+        font-size: 2rem;
+      }
+
     }
 
     .navlinks {
       display: flex;
       gap: 2rem;
-      li{
+
+      @include Mobile {
+        gap: 1rem;
+      }
+
+
+      li {
         color: #fff;
 
+
+        @include Mobile {
+          font-size: 14px;
+        }
+
         .link {
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-    
-            &:hover {
-              color: blue;
-            }
-    
-            &.active {
-              position: relative;
-              color: rgb(7, 7, 254);
-              transition: 0.3s;
-            }
-    
-            .bullet {
-              width: 5px;
-              height: 5px;
-              border-radius: 50%;
-              background: blue;
-            }
+          transition: 0.3s;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          &:hover {
+            color: blue;
           }
 
+          &.active {
+            position: relative;
+            color: rgb(7, 7, 254);
+            transition: 0.3s;
+          }
+
+          .bullet {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: blue;
+          }
+        }
       }
-     
     }
   }
 }

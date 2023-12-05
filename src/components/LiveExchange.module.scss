@@ -1,11 +1,21 @@
+@import "../styles/Responsive.scss";
+
 .container {
   padding: 5rem 6%;
   background: #fff;
+
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
 
   .title {
     width: 100%;
     text-align: center;
     margin-bottom: 4rem;
+
+    @include Mobile {
+      margin-bottom: 2rem;
+    }
 
     .tText {
       text-transform: uppercase;
@@ -14,28 +24,43 @@
       color: blue;
       letter-spacing: 3px;
       margin-bottom: 1.5rem;
+
+      @include Mobile {
+        font-size: 14px;
+        margin-bottom: 0.7rem;
+      }
     }
 
     .xlText {
       width: 600px;
       margin: 0 auto;
       line-height: 50px;
+
+      @include Mobile {
+        font-size: 24px;
+        width: 100%;
+        line-height: 32px;
+      }
     }
   }
 
   .table {
     padding: 1rem;
-    transition: .3s;
+    transition: 0.3s;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background: #fff;
 
-    &.invert{
-        background: #000;
-        color: #fff;
+    @include Mobile {
+      .hide {
+        display: none;
+      }
     }
 
-
+    &.invert {
+      background: #000;
+      color: #fff;
+    }
 
     button {
       display: flex;
@@ -53,47 +78,48 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: .3s;
+      transition: 0.3s;
 
-      &.invert{
-        background: #FFF;
+      @include Mobile {
+        font-size: 13px;
+      }
+
+      &.invert {
+        background: #fff;
         color: #000;
-    }
+      }
 
-
-      .toggle{
+      .toggle {
         display: flex;
         align-items: center;
         gap: 0.3rem;
 
-        .toggler{
-            width: 35px;
-            background: #fff;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: .3s;
-            
-            &.tr{
-                padding-left: .87rem;
-                background: blue;
-                
-            }
-            
-            .ball{
-                height: 16px;
-                width: 16px;
-                border-radius: 50%;
-                background: blue;
-                margin: 2px;
-                transition: .3s;
+        .toggler {
+          width: 35px;
+          background: #fff;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: 0.3s;
 
-                &.invert{
-                    background: #fff;
-                }
+          &.tr {
+            padding-left: 0.87rem;
+            background: blue;
+          }
+
+          .ball {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: blue;
+            margin: 2px;
+            transition: 0.3s;
+
+            &.invert {
+              background: #fff;
             }
           }
+        }
       }
-      
 
       .edit {
         button {
@@ -126,6 +152,10 @@
             width: 200px;
             transform: translateX(4rem);
             font-size: 15px;
+
+            @include Mobile {
+              font-size: 12px;
+            }
           }
 
           .imgWraps {
@@ -154,10 +184,18 @@
             font-size: 13px;
             letter-spacing: 2px;
             border-radius: 5px;
+
+            @include Mobile {
+              display: none;
+            }
           }
 
           .chart {
             transform: translateX(-3rem);
+
+            @include Mobile {
+              display: none;
+            }
           }
 
           .amount {
@@ -177,35 +215,58 @@
       justify-content: space-between;
       margin-top: 2rem;
 
-      p{
+      @include Mobile {
+        padding-inline: 0.5rem;
+      }
+
+      p {
         font-size: 14px;
-    }
+
+        @include Mobile {
+          font-size: 12px;
+        }
+      }
 
       .left {
         display: flex;
         align-items: center;
         gap: 0.3rem;
-        
-        .imgWraps{
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            display: grid;
-            place-content: center;
-            background: blue;
+
+        .imgWraps {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          display: grid;
+          place-content: center;
+          background: blue;
+
+          @include Mobile {
+            width: 20px;
+            height: 20px;
+          }
+
+          img {
+            @include Mobile {
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
 
-      .right{
+      .right {
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        
-        p{
-            color: #777;
+
+        p {
+          color: #777;
+          @include Mobile {
+            font-size: 12px;
+          }
         }
 
-        .dot{
+        .dot {
           height: 8px;
           width: 8px;
           background: blue;
