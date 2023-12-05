@@ -1,4 +1,4 @@
-@import '../../styles/Responsive.scss';
+@import "../../styles/Responsive.scss";
 
 .companies {
   padding-bottom: 2rem;
@@ -6,9 +6,15 @@
 
   .scroller {
     width: 85vw;
-
     overflow: hidden;
     margin: 0 auto;
+
+    @include Mobile{
+      margin: 0;
+      width: 100%;
+    }
+
+
 
     .inner {
       display: flex;
@@ -19,7 +25,9 @@
       width: calc(90px * 8);
       perspective: 100%;
 
-      &:hover{
+    
+
+      &:hover {
         animation-play-state: paused;
       }
 
@@ -28,6 +36,7 @@
         opacity: 0.4;
         transition: 0.3s;
         cursor: pointer;
+
 
         &:hover {
           opacity: 1;
@@ -41,5 +50,7 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-154px * 8));
+
   }
+
 }

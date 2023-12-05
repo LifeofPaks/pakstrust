@@ -256,6 +256,11 @@
           transform: rotate(-35deg);
           left: -2rem;
           top: -0.8rem;
+
+          @include Mobile {
+            width: 100px;
+            height: 35px;
+          }
         }
 
         img {

@@ -123,10 +123,10 @@ button {
   img {
     animation: spin 3s 0.1s linear;
 
-  @include Mobile{
+    @include Mobile {
       height: 65px;
       width: 45px;
-  }
+    }
   }
 
   p {
@@ -138,11 +138,11 @@ button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    
-    @include Mobile{
-      margin-top: -.5rem;
+
+    @include Mobile {
+      margin-top: -0.5rem;
       font-size: 7px;
-  }
+    }
   }
 }
 
@@ -177,14 +177,14 @@ button {
   line-height: 25px;
 }
 
-// PAGE ANIMATIONS
+// PAGE ANIMATIONS=========================================
 
 .slideUp {
   animation: fadeInUp 2s forwards;
   opacity: 0;
 }
 
-// ANIMATION DELAY
+// ANIMATION DELAY==========================================
 .d1 {
   animation-delay: 2s;
 }
@@ -205,7 +205,7 @@ button {
   animation-delay: 2.4s;
 }
 
-// SLIDER CAROUSEL
+// SLIDER CAROUSEL==========================================
 
 .CurrencyCarousel {
   margin-top: 3rem;
@@ -215,8 +215,17 @@ button {
     margin-bottom: 2rem;
     width: 400px;
     height: 220px;
-  }
 
+    @include Tablet {
+      width: 320px;
+      height: 200px;
+    }
+
+    @include Mobile {
+      width: 94%;
+      height: 180px;
+    }
+  }
 
   .col {
     padding: 1.5rem;
@@ -231,6 +240,11 @@ button {
       color: #777;
       line-height: 25px;
       font-size: 15px;
+
+      @include Tablet {
+        font-size: 13px;
+        line-height: 20px;
+      }
     }
 
     &:hover {
@@ -273,6 +287,10 @@ button {
       gap: 1rem;
       margin-bottom: 1rem;
 
+      @include Tablet {
+        margin-bottom: 0.5rem;
+      }
+
       .iconWraps {
         position: relative;
 
@@ -285,15 +303,30 @@ button {
           border-radius: 50%;
           background: rgba(172, 236, 199, 0.355);
           z-index: -1;
+
+          @include Mobile {
+            width: 25px;
+            height: 25px;
+          }
         }
 
         img {
           transition: 0.3s;
+
+          @include Mobile {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
 
       .xl {
         font-size: 20px;
+
+        @include Mobile {
+          font-size: 18px;
+        }
+        
       }
     }
 
@@ -308,14 +341,16 @@ button {
       gap: 0.6rem;
       transition: 0.3s;
 
+      @include Mobile {
+        font-size: 11px;
+      }
+
       .fIcon {
         transition: 1s;
       }
     }
   }
 }
-
-
 
 .slick-dots {
   display: flex;
@@ -328,7 +363,7 @@ button {
   li {
     margin: 0 5px;
     background: rgb(186, 186, 216);
-    transition: .3s;
+    transition: 0.3s;
     border-radius: 50%;
     color: transparent;
     height: 8px !important;
@@ -340,7 +375,7 @@ button {
       cursor: pointer;
       transition: background-color 0.3s;
 
-      &::before{
+      &::before {
         display: none;
       }
 
@@ -353,16 +388,15 @@ button {
       background-color: blue;
       width: 35px !important;
       height: 8px !important;
-      transition: .3s;
+      transition: 0.3s;
       border-radius: 20px;
     }
   }
 }
 
+// REVIEW CAROUSLE==========================================
 
-// REVIEW CAROUSLE
-
-.reviewCarousel{
+.reviewCarousel {
   .slick-slide div {
     margin: 0.5rem;
     margin-bottom: 2rem;
@@ -378,40 +412,37 @@ button {
     width: 615px;
     height: 300px;
 
-    .desc{
+    .desc {
       color: #777;
       line-height: 25px;
       font-size: 15px;
     }
-  
+
     &:hover {
       color: #fff;
-  
+
       p {
         color: #fff;
       }
 
-      .row{
-
-        .info{
-          .office{
+      .row {
+        .info {
+          .office {
             color: #fff;
           }
         }
       }
 
-      
-  
       .quote {
         filter: brightness(0) invert(1);
       }
-  
+
       &::before {
         width: 100%;
         opacity: 1;
       }
     }
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -425,32 +456,32 @@ button {
       transition: 0.3s;
       opacity: 0;
     }
-  
+
     .quote {
       transition: 1.5s;
     }
-  
+
     .row {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 1.5rem;
-  
+
       .left {
         display: flex;
         align-items: center;
         gap: 1rem;
-  
+
         img {
           object-fit: cover;
           border-radius: 50%;
         }
-  
+
         .info {
           .name {
             font-size: 20px;
           }
-          p{
+          p {
             font-size: 13px;
             margin-top: 0.5rem;
             color: #777;
@@ -459,5 +490,4 @@ button {
       }
     }
   }
-
 }

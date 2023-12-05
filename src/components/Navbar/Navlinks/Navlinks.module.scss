@@ -88,10 +88,14 @@
         height: 45px;
         border-radius: 62% 38% 46% 54%/60% 63% 37% 40%;
         background: blue;
-        display: grid;
+        display: none;
         place-content: center;
         cursor: pointer;
 
+        @include Tablet{
+          display: grid;
+        }
+        
         @include Mobile{
           width: 40px;
           height: 35px;

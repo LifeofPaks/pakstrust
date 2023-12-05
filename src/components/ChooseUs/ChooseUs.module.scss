@@ -6,8 +6,21 @@
   display: flex;
   align-items: center;
 
+  @include Tablet {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
+
   .left {
     width: 50%;
+
+    @include Tablet {
+      width: 100%;
+    }
 
     .tText {
       text-transform: uppercase;
@@ -16,11 +29,21 @@
       color: blue;
       letter-spacing: 3px;
       margin-bottom: 1.5rem;
+
+      @include Mobile {
+        font-size: 14px;
+        margin-bottom: .7rem;
+      }
     }
 
     .title {
       font-size: 2.5rem;
       margin-bottom: 1.5rem;
+
+      @include Mobile {
+        font-size: 24px;
+        margin-bottom: 0.7rem;
+      }
     }
 
     .desc {
@@ -28,6 +51,11 @@
       line-height: 25px;
       width: 650px;
       margin-bottom: 2rem;
+
+      @include Mobile {
+        font-size: 14px;
+        width: 100%;
+      }
     }
 
     .col {
@@ -68,6 +96,11 @@
           overflow: hidden;
           z-index: 1;
 
+          @include Mobile {
+            height: 50px;
+            width: 50px;
+          }
+
           &::before {
             content: "";
             position: absolute;
@@ -83,12 +116,21 @@
 
           img {
             transition: 0.3s;
+
+            @include Mobile {
+              width: 20px;
+              height: 20px;
+            }
           }
         }
 
         .rowText {
           font-size: 20px;
           transition: 0.3s;
+
+          @include Mobile {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -97,6 +139,10 @@
   .right {
     width: 60%;
     position: relative;
+
+    @include Tablet {
+      width: 100%;
+    }
 
     .wraps {
       display: flex;
@@ -107,10 +153,6 @@
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
-
-        img {
-          object-fit: cover;
-        }
       }
 
       .imgWrap {
@@ -118,68 +160,87 @@
         overflow: hidden;
         z-index: 10;
 
-        .cut {
-            width: 110px;
-            height: 40px;
-            background: #fff;
-            position: absolute;
-            transform: rotate(-35deg);
-            left: -2rem;
-            top: -0.8rem;
+        img {
+          object-fit: cover;
+          @include Tablet {
+            width: 100%;
+            height: 180px;
           }
+        }
 
-          .lImg{
-            object-fit: cover;
+        .cut {
+          width: 110px;
+          height: 40px;
+          background: #fff;
+          position: absolute;
+          transform: rotate(-35deg);
+          left: -2rem;
+          top: -0.8rem;
+
+          @include Mobile {
+            width: 80px;
+            height: 30px;
           }
+        }
+
+        .lImg {
+          object-fit: cover;
+
+          @include Tablet {
+            width: 100%;
+            height: 385px;
+          }
+        }
       }
     }
 
-    .flYel{
-        position: absolute;
-        width: 45px;
-        right: 0;
-        top: -2rem;
-        border-radius: 40% 40% 50% 70%;
-        animation: bounce 1.5s 1.5s ease-in-out infinite;
+    .flYel {
+      position: absolute;
+      width: 45px;
+      right: 0;
+      top: -2rem;
+      border-radius: 40% 40% 50% 70%;
+      animation: bounce 1.5s 1.5s ease-in-out infinite;
+
+      @include Tablet {
+        right: -1rem;
+      }
     }
 
     .flGreen {
-        position: absolute;
-        bottom: 3rem;
-        left: -2rem;
-        border-radius: 70% 70% 110% 170%;
-        animation: slide 3.5s 2s ease-in-out infinite;
-        width: 54px;
-        z-index: 11;
+      position: absolute;
+      bottom: 3rem;
+      left: -2rem;
+      border-radius: 70% 70% 110% 170%;
+      animation: slide 3.5s 2s ease-in-out infinite;
+      width: 54px;
+      z-index: 11;
     }
   }
 
-
-
-@keyframes bounce {
-    0%{
-        transform: translateY(-3px);
+  @keyframes bounce {
+    0% {
+      transform: translateY(-3px);
     }
-    50%{
-        transform: translateY(3px);
+    50% {
+      transform: translateY(3px);
     }
 
-    100%{
-        transform: translateY(-3px);
+    100% {
+      transform: translateY(-3px);
     }
-}
+  }
 
-@keyframes slide {
-    0%{
-        transform: translateX(-10px);
+  @keyframes slide {
+    0% {
+      transform: translateX(-10px);
     }
-    50%{
-        transform: translateX(10px);
+    50% {
+      transform: translateX(10px);
     }
 
-    100%{
-        transform: translateX(-10px);
+    100% {
+      transform: translateX(-10px);
     }
-}
-
+  }
 }

@@ -3,6 +3,10 @@
 .cTools {
   padding: 7rem 6%;
 
+  @include Mobile {
+    padding: 3rem 2rem;
+  }
+
   .title {
     width: 100%;
     text-align: center;
@@ -11,6 +15,11 @@
       margin-bottom: 2rem;
       width: 600px;
       margin-inline: auto;
+
+      @include Mobile {
+        width: 100%;
+        font-size: 20px;
+      }
     }
 
     .titleText {
@@ -20,6 +29,10 @@
       color: blue;
       letter-spacing: 3px;
       margin-bottom: 1.5rem;
+
+      @include Mobile {
+font-size: 14px;
+      }
     }
   }
 }

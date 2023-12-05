@@ -4,8 +4,8 @@
   padding: 5rem 6%;
   background: #fff;
 
-  @include Tablet{
-    padding: 2rem 2%;
+  @include Tablet {
+    padding: 2rem;
   }
 
   .container {
@@ -13,11 +13,21 @@
     align-items: center;
     gap: 2rem;
 
+    @include Tablet {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
     .left {
       width: 50%;
       display: flex;
       align-items: center;
       background: url("../../../public/leaf1.png") no-repeat 70px 100px;
+
+      @include Tablet {
+        background: url("../../../public/leaf1.png") no-repeat 80px 100px;
+        width: 100%;
+      }
 
       .imgWrap {
         position: relative;
@@ -25,12 +35,28 @@
         height: 650px;
         width: 500px;
 
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @include Mobile {
+          width: 320px;
+          height: 430px;
+        }
+
         &.smallImg {
           margin-right: -30%;
           border: 5px solid #fff;
           z-index: 1;
           height: 350px;
           width: 350px;
+
+          @include Mobile {
+            margin-right: -20%;
+            width: 175px;
+            height: 175px;
+          }
         }
 
         img {
@@ -45,6 +71,11 @@
           transform: rotate(-35deg);
           left: -2rem;
           top: -0.8rem;
+
+          @include Mobile {
+            width: 100px;
+            height: 35px;
+          }
         }
       }
     }
@@ -52,9 +83,18 @@
     .right {
       width: 50%;
 
+      @include Tablet {
+        width: 100%;
+      }
+
       p {
         color: #777;
         line-height: 25px;
+
+        @include Mobile {
+          width: 100%;
+          font-size: 14px;
+        }
       }
 
       .lText {
@@ -64,11 +104,19 @@
         color: blue;
         letter-spacing: 3px;
         margin-bottom: 1rem;
+
+        @include Mobile {
+          font-size: 14px;
+        }
       }
 
       .xxlText {
         font-size: 2.3rem;
         margin-bottom: 1.5rem;
+
+        @include Mobile {
+          font-size: 20px;
+        }
       }
 
       .desc {
@@ -76,11 +124,13 @@
       }
 
       .row {
+
         .col {
           margin-bottom: 2rem;
           display: flex;
           align-items: center;
           gap: 1rem;
+
 
           &:hover {
             .slideY {
@@ -102,12 +152,16 @@
 
           .slideY {
             height: 55px;
-            width: 65px;
+            width: 55px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 1;
             display: grid;
             place-content: center;
+
+            @include Mobile {
+              width: 30%;
+            }
 
             &::before {
               content: "";
@@ -132,6 +186,16 @@
               font-size: 22px;
               margin-bottom: 0.7rem;
               transition: 0.3s;
+
+              @include Mobile {
+                font-size: 18px;
+              }
+            }
+
+            .dText {
+              @include Mobile {
+                width: 100%;
+              }
             }
           }
         }
