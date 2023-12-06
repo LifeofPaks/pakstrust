@@ -25,7 +25,7 @@ const Login = () => {
         </div>
         <div className={styles.right}>
           <Link href="/ " className={styles.logo}>
-            <Image width={120} height={190} src="/logo-R.jpeg" alt="logo-img" />
+            <Image width={120} height={190} src="/logo-R.png" alt="logo-img" />
             <div className={styles.text}>
               <h1>rivero</h1>
               <h2>Trust Bank Plc</h2>

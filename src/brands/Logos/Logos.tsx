@@ -6,7 +6,7 @@ import Link from "next/link";
 const Logos = () => {
   return (
     <Link href='/ ' className={styles.logo}>
-      <Image width={70} height={100} src="/logo-R.jpeg" alt="logo-img" />
+      <Image width={70} height={100} src="/logo-R.png" alt="logo-img" />
       <div className={styles.text}>
         <h1>rivero</h1>
         <h2>Trust Bank Plc</h2>
