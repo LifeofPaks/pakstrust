@@ -29,7 +29,7 @@ const ContactForm = () => {
       </form>
 
       <div className={styles.gif}>
-        <Image src="/contact-anim.gif" width={600} height={400} alt="gif" />
+        <Image src="/contact.png" width={600} height={600} alt="gif" />
       </div>
     </div>
   );
