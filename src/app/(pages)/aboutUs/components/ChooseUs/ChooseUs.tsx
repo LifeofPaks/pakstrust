@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ChooseUs.module.scss";
 import Image from "next/image";
-import FunFacts from "../FunFacts/FunFacts";
+
 
 const ChooseUs = () => {
   return (

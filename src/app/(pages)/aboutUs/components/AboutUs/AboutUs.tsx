@@ -11,12 +11,24 @@ const AboutUs = () => {
       <div className={styles.left}>
         <div className={styles.imgWraps}>
           <div className={styles.top}>
-            <Image src="/ab1.jpeg" width={300} height={350} alt="about-img" />
+            <Image
+              src="/ab1.jpeg"
+              width={300}
+              height={350}
+              alt="about-img"
+              className={`${styles.lnImg} ${styles.first}`}
+            />
             <Image src="/ab2.jpeg" width={300} height={300} alt="about-img" />
           </div>
           <div className={styles.bottom}>
             <Image src="/ab3.jpeg" width={300} height={300} alt="about-img" />
-            <Image src="/ab4.jpeg" width={300} height={350} alt="about-img" />
+            <Image
+              src="/ab4.jpeg"
+              width={300}
+              height={350}
+              alt="about-img"
+              className={styles.lnImg}
+            />
           </div>
         </div>
 
@@ -26,7 +38,7 @@ const AboutUs = () => {
           width={330}
           height={100}
           alt="about-img"
-          />
+        />
         <Image
           className={styles.oval}
           src="/shape-1.png"

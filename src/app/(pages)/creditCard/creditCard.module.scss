@@ -3,6 +3,14 @@
 
 .container {
     margin-top: 6rem;
+
+    @include Tablet{
+      margin-top: 5rem;
+    }
+  
+    @include Mobile{
+      margin-top: 3rem;
+    }
     .hero {
       color: #fff;
       display: flex;

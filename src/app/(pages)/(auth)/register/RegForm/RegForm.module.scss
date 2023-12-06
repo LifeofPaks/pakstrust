@@ -1,15 +1,17 @@
 @import "../../../../../styles/Responsive.scss";
 
 .regForm {
-    color: #333;
-    overflow-y: scroll;
-    padding-block: 7rem;
+  color: #333;
+  overflow-y: scroll;
+  padding-block: 7rem;
 
-    &::-webkit-scrollbar{
-      display: none;
-    }
-    
- 
+  @include Mobile {
+    padding-inline: 2rem;
+      }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .heading {
     color: #333;
@@ -20,6 +22,8 @@
       text-align: center;
       font-size: 20px;
       font-weight: 500;
+
+      
     }
 
     .text {
@@ -27,6 +31,11 @@
       width: 400px;
       margin-inline: auto;
       margin-top: 1rem;
+
+      @include Mobile {
+        font-size: 14px;
+        width: 100%;
+      }
     }
   }
 
@@ -38,7 +47,7 @@
       row-gap: 1rem;
       margin-bottom: 2rem;
 
-      .gridInputBox{
+      .gridInputBox {
         display: flex;
         flex-direction: column;
 
@@ -46,94 +55,143 @@
           background: #f0f0f0;
           height: 45px;
           padding-inline: 1rem;
+
+          @include Mobile {
+            font-size: 13px;
+          }
         }
-      
-        label{
+
+        label {
           font-size: 14px;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
+
+          @include Mobile {
+            font-size: 13px;
+          }
         }
       }
     }
 
-    .inputBox{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        input {
-          background: #f0f0f0;
-          height: 45px;
-          padding-inline: 1rem;
+    .inputBox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+
+      @include Mobile {
+        font-size: 13px;
+      }
+      input {
+        background: #f0f0f0;
+        height: 45px;
+        padding-inline: 1rem;
+      }
+
+      label {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+
+        @include Mobile {
+          font-size: 13px;
         }
-      
-        label{
-          font-size: 14px;
-          margin-bottom: .5rem;
-        }
+      }
     }
 
-    .checkbox{
+    .checkbox {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       margin-bottom: 2rem;
-      
-      label{
-          cursor: pointer;
-          font-size: 12px;
 
-          a{
-            color: blue;
-            transition: .3s;
+      label {
+        cursor: pointer;
+        font-size: 12px;
 
-            &:hover{
-              opacity: .6;
-            }
+        @include Mobile {
+          font-size: 11px;
+        }
+
+        a {
+          color: blue;
+          transition: 0.3s;
+
+          &:hover {
+            opacity: 0.6;
           }
+        }
       }
-      
-      input{
-          cursor: pointer;
-          height: 16px;
-          width: 16px;
+
+      input {
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+
+        @include Mobile {
+          height: 14px;
+          width: 14px;
+                  }
       }
-  }
-
-    .btnWraps{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        button{
-            height: 45px;
-            border-radius: 5px;
-            font-size: 15px;
-            color: #fff;
-            transition: .3s;
-
-            &:hover{
-                opacity: .7;
-            }
-        }
-
-        .mBtn{
-            width: 100%;
-            background: rgb(93, 93, 223);
-
-        }
-
-        .oBtn{
-            background: #000;
-
-            a{
-                display: flex;
-                align-items: center;
-                gap: .3rem;
-                justify-content: center;
-            }
-           
-        }
-
     }
+
+    .btnWraps {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      button {
+        height: 45px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: #fff;
+        transition: 0.3s;
+
+        @include Mobile {
+          font-size: 13px;
+        }
+  
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .mBtn {
+        width: 100%;
+        background: blue;
+      }
+
+      .oBtn {
+        background: #000;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          justify-content: center;
+        }
+      }
+      .back{
+        display: none;
+    
+        @include Tablet{
+          display: block;
+          width: 100%;
+          margin-top: 0.5rem;
+          font-size: 13px;
+          bottom: 0;
+        }
+
+        a{
+          color: blue;
+          font-weight: bold;
+          text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 11px;
+        }
+      }
+    }
+   
   }
+
+ 
 }

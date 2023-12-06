@@ -3,6 +3,7 @@ import styles from '../login/login.module.scss'
 import Translator from "@/helpers/Translator";
 import Logos from "@/brands/Logos/Logos";
 import RegForm from './RegForm/RegForm';
+import Image from 'next/image';
 
 const Register = () => {
   return (
@@ -19,6 +20,8 @@ const Register = () => {
               Swift and Secure Money Transfer to any bank account will become a
               breeze with Rivero Trust Bank.
             </p>
+
+            <Image src='/cta.png' width={400} height={400} alt='img'/>
           </div>
           <div className={styles.right}>
             <RegForm/>

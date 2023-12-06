@@ -17,11 +17,10 @@ const ContactForm = () => {
         <div className={styles.terms}>
           <input type="checkbox" id="terms" />
           <label htmlFor="terms">
-            I agree to <Link href="/Terms">Terms & Conditions</Link> and
-            <Link href="/support">Privacy Policy</Link>
+            I agree to <Link href="/Terms">Terms & Conditions</Link> and <Link href="/support">Privacy Policy</Link>
           </label>
         </div>
-        <Link href="/login">
+        <Link href="/">
           <button className="primaryBtn">
             send message
             <FontAwesomeIcon className={styles.icon} icon={faChevronRight} />

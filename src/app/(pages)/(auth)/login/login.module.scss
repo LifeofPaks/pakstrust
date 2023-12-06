@@ -1,8 +1,7 @@
 @import "../../../../styles/Responsive.scss";
 .cta {
   background: #fff;
-    height: 100vh;
-    
+  height: 100vh;
 
   .top {
     width: 100%;
@@ -19,66 +18,106 @@
     .left {
       height: 100vh;
       width: 45%;
-      background-image: linear-gradient(
-          to bottom,
-          rgba(18, 42, 224, 0.52),
-          rgba(19, 37, 117, 0.73)
-        ),
-        url("https://i.pinimg.com/564x/cd/2d/d1/cd2dd1bd7777614247894947bbac5874.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: blue;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
       color: #fff;
 
+      @include Tablet {
+        display: none;
+      }
+
       .title {
         margin-top: 2rem;
         margin-bottom: 1rem;
+        
       }
 
       .text {
         width: 500px;
         text-align: center;
       }
+
+      .abs{
+        margin-top: 4rem;
+      }
     }
 
     .right {
       height: 100vh;
-        width: 55%;
-        display: flex;
+      width: 55%;
+      display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-   
 
-      .logo{
+      @include Tablet {
+        width: 100%;
+      }
 
+      @include Mobile {
+        width: 100%;
+      }
+
+      .logo {
         display: flex;
         align-items: center;
         background: #fff;
         padding-inline: 2rem;
         width: fit-content;
-    
-        .text{
-            text-transform: uppercase;
-            color: #05004e;
-    
-            h1{
-    
-                font-weight: 800;
-                font-size: 60px;
-            }
-    
-            h2{
-                font-size: 20px;
-                color: red;
-                font-weight: 700;
-            }
-    
+        display: none;
+
+        @include Tablet{
+          display: flex;
+      }
+
+        img {
+          @include Tablet{
+            height: 80px;
+            width: 60px;
         }
 
+          @include Mobile{
+            height: 60px;
+            width: 40px;
+        }
+        }
+
+        .text {
+          text-transform: uppercase;
+          color: #05004e;
+
+          
+
+          h1 {
+            font-weight: 800;
+            font-size: 60px;
+
+            @include Tablet {
+              font-size: 24px;
+            }
+
+            @include Mobile {
+              font-size: 20px;
+            }
+          }
+
+          h2 {
+            font-size: 20px;
+            color: red;
+            font-weight: 700;
+
+            @include Tablet {
+              font-size: 10px;
+            }
+
+            @include Mobile {
+              font-size: 8px;
+            }
+          }
+        }
       }
     }
   }

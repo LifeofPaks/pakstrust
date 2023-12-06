@@ -48,9 +48,8 @@
     }
 
     @include Mobile {
-flex-direction: column;
-      }
-
+      flex-direction: column;
+    }
 
     .cardsW {
       width: 100%;

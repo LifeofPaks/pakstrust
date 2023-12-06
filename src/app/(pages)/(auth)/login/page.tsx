@@ -21,6 +21,7 @@ const Login = () => {
             Swift and Secure Money Transfer to any bank account will become a
             breeze with Rivero Trust Bank.
           </p>
+          <Image className={styles.abs} src='/cta.png' width={400} height={400} alt='img'/>
         </div>
         <div className={styles.right}>
           <Link href="/ " className={styles.logo}>

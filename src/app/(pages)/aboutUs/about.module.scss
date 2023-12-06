@@ -1,7 +1,15 @@
-@import '../../../styles/Responsive.scss';
+@import "../../../styles/Responsive.scss";
 
 .container {
   margin-top: 6rem;
+
+  @include Tablet {
+    margin-top: 5rem;
+  }
+
+  @include Mobile {
+    margin-top: 3rem;
+  }
 
   .hero {
     color: #fff;
@@ -14,59 +22,76 @@
     background-image: linear-gradient(
         to right,
         rgba(30, 30, 121, 0.706),
-        rgb(2, 2, 2),
+        rgb(2, 2, 2)
       ),
       url("https://www.investopedia.com/thmb/8CxIyvj1X29EDMH66ZlNVBlXWPU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/studentusingacreditcard-bdaceaa304324520b7856fbfa4ae38fc.jpg");
     background-size: cover;
     background-position: center;
 
-    h1{
-        font-size: 40px;
-        margin-bottom: 2rem;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 2rem;
+
+      @include Mobile {
+        font-size: 2rem;
+      }
     }
 
     .navlinks {
       display: flex;
       gap: 2rem;
-      li{
+
+      @include Mobile {
+        gap: 1rem;
+      }
+
+      li {
         color: #fff;
 
+        @include Mobile {
+          font-size: 14px;
+        }
+
         .link {
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            gap: .5rem;
-    
-            &:hover {
-              color: blue;
-            }
-    
-            &.active {
-              position: relative;
-              color: rgb(7, 7, 254);
-              transition: 0.3s;
-            }
-    
-            .bullet {
-              width: 5px;
-              height: 5px;
-              border-radius: 50%;
-              background: blue;
-            }
+          transition: 0.3s;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          &:hover {
+            color: blue;
           }
 
-      }
-     
-    }
+          &.active {
+            position: relative;
+            color: rgb(7, 7, 254);
+            transition: 0.3s;
+          }
 
-   
+          .bullet {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: blue;
+          }
+        }
+      }
+    }
   }
 
-  .title{
+  .title {
     width: 100%;
     text-align: center;
     font-size: 2.3rem;
     padding-block: 6rem 3rem;
     background: #fff;
+
+    @include Tablet {
+      padding-inline: 2rem;
+    }
+
+    @include Mobile {
+      font-size: 24px;
+    }
   }
 }
