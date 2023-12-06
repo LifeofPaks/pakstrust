@@ -30,7 +30,7 @@ const FunFacts = () => {
       <div className={styles.title}>
         <p className="tText">SOME FUN FACTS</p>
         <h1 className={styles.tHeading}>
-          We Always Try To Understand Customer's Expectation
+          We Always Try To Understand Customer&apos;s Expectation
         </h1>
       </div>
 

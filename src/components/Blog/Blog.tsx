@@ -22,6 +22,7 @@ const Blog = () => {
             className={styles.card}
             data-aos="fade-up"
             data-aos-delay={data.delay}
+            key={data.id}
           >
             <Image src={data.image} alt="blog-img" width={450} height={300} />
             <div className={styles.content}>

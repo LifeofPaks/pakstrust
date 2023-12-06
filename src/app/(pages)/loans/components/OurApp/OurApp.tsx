@@ -19,7 +19,10 @@ const OurApp = () => {
         <p className="tText">OUR LOANS</p>
         <h1>Finance your next car</h1>
         <p className="text">
-        Are you looking for a car loan for a new or used vehicle? In minutes, find out if you're pre-qualified for financing with no influence on your credit score. Also, before visiting a participating dealer, make sure you understand your loan terms.
+          Are you looking for a car loan for a new or used vehicle? In minutes,
+          find out if you&apos;re pre-qualified for financing with no influence on
+          your credit score. Also, before visiting a participating dealer, make
+          sure you understand your loan terms.
         </p>
         <h2>Over 700K+ approved loans</h2>
         <div className={styles.appWraps}>

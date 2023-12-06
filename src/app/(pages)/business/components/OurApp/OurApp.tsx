@@ -18,7 +18,7 @@ const OurApp = () => {
       </div>
       <div className={styles.right}>
         <p className="tText">OUR APP</p>
-        <h1>Let's Answer Some Of Your Questions Or Download Our App</h1>
+        <h1>Let&apos;s Answer Some Of Your Questions Or Download Our App</h1>
         <p className="text">
           Our digital banking platform is up to date and completely trustworthy.
           You can use your mobile to perform transactions, loan requests, and

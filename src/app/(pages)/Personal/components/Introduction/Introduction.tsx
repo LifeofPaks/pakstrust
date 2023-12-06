@@ -29,7 +29,7 @@ const Introduction = () => {
           <div className={styles.item}>
             <Image src="/checkall.png" width={15} height={15} alt="checkall" />
             <p className={styles.text}>
-              To meet your banking needs, you'll need a combination of current
+              To meet your banking needs, you will need a combination of current
               and savings accounts.
             </p>
           </div>
@@ -38,7 +38,7 @@ const Introduction = () => {
             <Image src="/checkall.png" width={15} height={15} alt="checkall" />
             <p className={styles.text}>
               Complementary accounts that work together to meet the demands of
-              each individual's cash portfolio.
+              each individual&apos;s cash portfolio.
             </p>
           </div>
 

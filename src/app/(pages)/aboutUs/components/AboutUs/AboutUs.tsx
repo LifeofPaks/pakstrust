@@ -52,7 +52,7 @@ const AboutUs = () => {
         <p className="tText">ABOUT US</p>
         <h1>Digital Banking was revolutionized by us.</h1>
         <p className={styles.text}>
-          We've developed to become one of the most well-known digital banking
+          We&apos;ve developed to become one of the most well-known digital banking
           companies, dedicated to reinventing, simplifying, and humanizing the
           banking experience.
         </p>
@@ -89,7 +89,7 @@ const AboutUs = () => {
 
               <p className={styles.dText}>
                 Our digital banking services are transparent and quick, and
-                we're building a reliable network.
+                we&apos;re building a reliable network.
               </p>
             </div>
           </div>

@@ -13,7 +13,7 @@ const Hero = () => {
   const { togglePlayVideo } = store();
   const [backgroundPosition, setBackgroundPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: any) => {
     const { clientX: x, clientY: y } = e;
     setBackgroundPosition({ x, y });
   };
