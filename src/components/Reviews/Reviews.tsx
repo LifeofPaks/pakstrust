@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Reviews = () => {
+  //check the global.scss file for the carousel styling
 
   var settings = {
     dots: true,
